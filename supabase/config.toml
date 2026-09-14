@@ -1,0 +1,24 @@
+project_id = "el-chakero"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+
+[db]
+port = 54322
+major_version = 15
+
+[auth]
+enabled = true
+site_url = "http://127.0.0.1:43173"
+additional_redirect_urls = ["http://127.0.0.1:43173/auth/callback"]
+
+[auth.email]
+enable_signup = true
+double_confirm_changes = true
+enable_confirmations = true
+
+[storage]
+enabled = true
+file_size_limit = "5MiB"
