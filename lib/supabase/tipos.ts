@@ -89,3 +89,59 @@ export const ETIQUETA_ROL: Record<Rol, string> = {
   consejo: "Consejo",
   infra: "Infra",
 };
+
+export const ETIQUETA_ESTADO: Record<EstadoPieza, string> = {
+  idea: "Idea",
+  asignada: "Asignada",
+  borrador: "Borrador",
+  en_revision: "En revisión",
+  aprobada: "Aprobada",
+  publicada: "Publicada",
+  retirada: "Retirada",
+};
+
+export const ETIQUETA_FORMATO: Record<Formato, string> = {
+  noticia: "Noticia",
+  cronica: "Crónica",
+  perfil: "Perfil",
+  galeria: "Galería",
+  guia: "Guía",
+  pregon: "Pregón",
+};
+
+export const FORMATOS_FORMULARIO = [
+  "noticia",
+  "cronica",
+  "perfil",
+  "guia",
+  "pregon",
+] as const satisfies readonly Formato[];
+
+export type Pieza = {
+  id: string;
+  titulo: string;
+  seccion: Seccion;
+  formato: Formato;
+  entradilla: string | null;
+  cuerpo: string | null;
+  foto_url: string | null;
+  pie_foto: string | null;
+  audio_url: string | null;
+  duracion: string | null;
+  autor_id: string;
+  estado: EstadoPieza;
+  vinculo: boolean;
+  transparencia: string | null;
+  actualizado_en: string;
+};
+
+export type PiezaLista = {
+  id: string;
+  titulo: string;
+  seccion: Seccion;
+  formato: Formato;
+  estado: EstadoPieza;
+  actualizado_en: string;
+  autor_id: string;
+  autor: { nombre: string } | null;
+};
