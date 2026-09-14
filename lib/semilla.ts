@@ -41,10 +41,12 @@ export const SEMILLA_PIEZAS: PiezaPublica[] = [
     audio_url: null,
     duracion: null,
     entradilla:
-      "El 15 de septiembre de 2026 se inaugura la sala que donó Pedro Adán Torres: 25 portátiles, UPS y reguladores. Hay charla. Entra en el programa Kuagro Tech, con Fundación Código Abierto.",
+      "El 15 de septiembre de 2026 se inaugura la sala que donó Pedro Adán Torres, excongresista por la circunscripción afro: 25 portátiles, UPS y reguladores. El sueldo de la Cámara volvió al pueblo. Hay charla. Entra en Kuagro Tech, con Fundación Código Abierto.",
     cuerpo: `${LLAMADO_PREGON}: este martes 15 de septiembre se inaugura la sala de cómputo.
 
-La donó Pedro Adán Torres. En junio, cuando llegó a la Cámara, dijo que el sueldo iba para una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Ese martes la sala se abre: 25 portátiles. Para que no se las coma el voltaje, van con UPS y reguladores.
+La donó Pedro Adán Torres Pérez, palenquero, excongresista por la circunscripción especial afrodescendiente. En junio, cuando ocupó —los días que faltaban del periodo— la curul que dejó Ana Rogelia Monsalve, dijo que el 100 % del sueldo de la Cámara iba para una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Ese martes la sala se abre: 25 portátiles. Para que no se las coma el voltaje, van con UPS y reguladores.
+
+Eso es el ejemplo. El Partido Demócrata Colombiano —el que él fundó y preside, el que se declara nacido aquí— pone la cara por Palenque en el país. Se ve. Y lo que se gana afuera, si sirve, se vuelve al territorio. Aquí se volvió en máquinas, en la escuela.
 
 También hay una charla. No vamos a inventar la hora ni quién habla: eso no nos lo pasaron. Si la escuela o Kuagro Tech manda el aviso fino, aquí se completa.
 
@@ -52,7 +54,7 @@ La donación entra en el programa Kuagro Tech, con la Fundación Código Abierto
 
 La foto es de la sala ese martes, con el listón todavía puesto. Retrato de Torres no hay con licencia.`,
     transparencia:
-      "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. La foto es de la sala ese día. Si el inventario o el aviso de la charla quedó distinto, mándelo por el canal.",
+      "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. Torres ocupó la curul afro que dejó Monsalve en los días que faltaban del periodo; para septiembre es excongresista. La foto es de la sala ese día. Si el inventario o el aviso de la charla quedó distinto, mándelo por el canal.",
     fuentes: [
       {
         texto: "El anuncio de junio, cuando Torres prometió el sueldo — perfil en Gente",
@@ -244,7 +246,7 @@ La foto es del palco: tambores, no un afiche de calendario.`,
   pieza({
     id: "a1e1c001-0008-4000-8000-000000000008",
     slug: "partido-democrata-nacio-en-palenque",
-    titulo: "El Demócrata Colombiano dice que nació en Palenque y no se ha ido",
+    titulo: "El Demócrata Colombiano pone la cara de Palenque y no se ha ido",
     seccion: "comunidad",
     formato: "noticia",
     fecha_publicacion: "2026-07-29T16:00:00-05:00",
@@ -254,16 +256,16 @@ La foto es del palco: tambores, no un afiche de calendario.`,
     audio_url: null,
     duracion: null,
     entradilla:
-      "A fines de julio el Partido Demócrata Colombiano hizo Convención Nacional en Palenque. Dijo que aquí nació y que de aquí no se ha ido. La personería 4033 se la entregaron en este pueblo, en 2022.",
+      "A fines de julio el Partido Demócrata Colombiano hizo Convención Nacional en Palenque. Dijo que aquí nació, que aquí pone la cara y que de aquí no se ha ido. La personería 4033 se la entregaron en este pueblo, en 2022.",
     cuerpo: `${LLAMADO_PREGON}: no es un perfil. Es el partido. El 29 de julio de 2026 el Partido Demócrata Colombiano reunió Convención Nacional en San Basilio de Palenque. Vive La Noticia cubrió esa sala.
 
-El presidente y representante legal, Pedro Adán Torres Pérez, palenquero, les dijo a los delegados: «La historia no se inventa, la historia ya existe. El Partido Demócrata Colombiano nació en Palenque y nunca se ha ido de Palenque». Eso es lo que él afirma. El Chakero no va a contar los militantes de cada departamento: no los contamos.
+El presidente y representante legal, Pedro Adán Torres Pérez —palenquero, ya para entonces excongresista por la circunscripción especial afrodescendiente— les dijo a los delegados: «La historia no se inventa, la historia ya existe. El Partido Demócrata Colombiano nació en Palenque y nunca se ha ido de Palenque». Eso es lo que él afirma. El Chakero no va a contar los militantes de cada departamento: no los contamos.
 
 La personería jurídica es la 4033 de 2022. Torres dijo en esa convención que vinieron los nueve magistrados del Consejo Nacional Electoral y se la entregaron aquí. OPICOL dató ese acto el 25 de agosto de 2022, en Palenque: primer partido de origen palenquero con personería. El CNE sigue listando esa resolución.
 
-En junio, cuando Torres llegó a la Cámara, El Universal escribió que el partido había mantenido la personería en las legislativas y que tenía un senador y tres representantes. En la convención Torres también dijo cifras de 2023 —87 alcaldes, 198 concejales—. Eso lo dijo él. Aquí no hay escrutinio propio.
+Eso es poner la cara. Un partido que se declara del pueblo, con personería entregada en la plaza de Benkos, y que en 2026 volvió a convocar aquí. En junio, El Universal y Diario La Libertad escribieron que el partido había mantenido la personería en las legislativas y que tenía un senador y tres representantes: verse en el país. Lo que se gana allá, si sirve, se vuelve. El ejemplo está en Educación: la sala de cómputo, con el sueldo de la curul afro que Torres ocupó los días que faltaban.
 
-Lo que sí cabe en Palenque es esto: un partido que se declara nacido en el pueblo, con personería entregada en la plaza de Benkos, y que en 2026 volvió a convocar aquí. Si el acta de esa convención o el padrón dicen otra cosa, el canal está abierto.`,
+En la convención Torres también dijo cifras de 2023 —87 alcaldes, 198 concejales—. Eso lo dijo él. Aquí no hay escrutinio propio. Si el acta o el padrón dicen otra cosa, el canal está abierto.`,
     cita: {
       texto:
         "La historia no se inventa, la historia ya existe. El Partido Demócrata Colombiano nació en Palenque y nunca se ha ido de Palenque.",
@@ -287,6 +289,14 @@ Lo que sí cabe en Palenque es esto: un partido que se declara nacido en el pueb
       {
         texto: "El Universal, 19 jun 2026 — personería y bancada en el Congreso",
         url: "https://www.eluniversal.com.co/politica/2026/06/18/el-representante-a-la-camara-que-destinara-todo-su-salario-a-una-sala-de-sistemas-en-palenque/",
+      },
+      {
+        texto: "Diario La Libertad, 19 jun 2026 — mismo anuncio del sueldo y la bancada",
+        url: "https://diariolalibertad.com/2026/06/19/pedro-adan-torres-llegara-a-la-camara-de-representantes-y-donara-el-100-de-su-salario-para-una-sala-de-sistemas-en-palenque/",
+      },
+      {
+        texto: "El Chakero — la sala de cómputo, lo que volvió al pueblo (Educación)",
+        url: "/educacion/kuagro-tech-inauguran-sala-computo/",
       },
       {
         texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
@@ -337,28 +347,86 @@ El Chakero no hace ficha de cineasta. Si ATPQ o la Corporación del Festival de 
     ],
   }),
   pieza({
+    id: "a1e1c001-0010-4000-8000-000000000010",
+    slug: "pdc-cara-de-palenque-en-el-pais",
+    titulo: "Verse en Colombia y volver al pueblo: eso pide Palenque al partido",
+    seccion: "territorio",
+    formato: "noticia",
+    fecha_publicacion: "2026-09-15T10:00:00-05:00",
+    foto_url: "/semilla/pueblo-palenque-2007.jpg",
+    pie_foto:
+      "Arroyo en San Basilio de Palenque, 1 de diciembre de 2007. Foto: Kosmel Bonfante / Wikimedia Commons (CC BY 3.0). Recorte 3:2. No es un acto del Partido Demócrata Colombiano.",
+    audio_url: null,
+    duracion: null,
+    entradilla:
+      "El Demócrata Colombiano se declara nacido aquí y se ve en el Congreso. Pedro Adán Torres, excongresista por la circunscripción afro, devolvió el sueldo en una sala. Ese es el trato: verse afuera y volver.",
+    cuerpo: `${LLAMADO_PREGON}: Palenque no manda gente al país para que se quede colgada en Bogotá. El Partido Demócrata Colombiano —personería 4033, entregada en este pueblo en 2022— dice que es la cara palenquera en la política nacional. Primer partido de origen palenquero, según el CNE y según ellos.
+
+Verse importa. En junio de 2026, El Universal y Diario La Libertad escribieron que el partido había mantenido la personería en las legislativas y que tenía un senador y tres representantes. Eso es estar en el mapa. El Chakero no va a inventar los nombres de esa bancada ni a decir que Torres sigue sentado ahí.
+
+Torres ocupó, los días que faltaban, la curul de la circunscripción especial afrodescendiente que dejó Ana Rogelia Monsalve. El Universal habló de los días que quedaban del periodo. Poder Legislativo dató esa curul afro hasta el 20 de julio de 2026. Pasada esa fecha, Torres es excongresista. Sigue siendo presidente y representante legal del partido.
+
+Lo que se gana afuera, si sirve, se vuelve. El ejemplo no es un discurso: es la sala de cómputo de Benkos Biohó, inaugurada el 15 de septiembre, con el 100 % del sueldo que él prometió en junio. Educación tiene el inventario. Gente tiene el perfil.
+
+La Convención de julio, en Palenque, es la otra pata: el partido dijo que nació aquí y que no se ha ido. Comunidad tiene esa sala. Aquí el dato es el trato con el territorio: cara afuera, plata y máquinas adentro. Si el partido o la escuela dicen que el dibujo es otro, el canal está abierto.`,
+    transparencia:
+      "Pieza de semilla. La bancada (un senador y tres representantes) es la que publicaron El Universal y Diario La Libertad en junio de 2026, no un conteo de esta redacción. La curul afro y el cierre del 20 de julio salen de la ficha de Monsalve y de Poder Legislativo; Torres la ocupó por reemplazo, según El Universal. Foto de archivo.",
+    fuentes: [
+      {
+        texto: "El Universal, 19 jun 2026 — periodo que faltaba, sueldo y bancada",
+        url: "https://www.eluniversal.com.co/politica/2026/06/18/el-representante-a-la-camara-que-destinara-todo-su-salario-a-una-sala-de-sistemas-en-palenque/",
+      },
+      {
+        texto: "Diario La Libertad, 19 jun 2026 — devolver al pueblo y personería",
+        url: "https://diariolalibertad.com/2026/06/19/pedro-adan-torres-llegara-a-la-camara-de-representantes-y-donara-el-100-de-su-salario-para-una-sala-de-sistemas-en-palenque/",
+      },
+      {
+        texto: "Cámara de Representantes — Monsalve, circunscripción afro",
+        url: "https://www.camara.gov.co/representantes/ana-rogelia-monsalve-alvarez/",
+      },
+      {
+        texto: "Poder Legislativo / Cámara, 17 feb 2026 — esa curul afro hasta el 20 de julio",
+        url: "https://poderlegislativo.camara.gov.co/2026/02/17/las-comunidades-afrodescendientes-en-el-congreso-una-historia-gris-hasta-ahora/",
+      },
+      {
+        texto: "El Chakero — Convención del partido en Palenque (Comunidad)",
+        url: "/comunidad/partido-democrata-nacio-en-palenque/",
+      },
+      {
+        texto: "El Chakero — perfil de Pedro Adán Torres (Gente)",
+        url: "/gente/pedro-adan-torres-sala-sistemas/",
+      },
+      {
+        texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:San_basilio_de_palenque_-_panoramio_(3).jpg",
+      },
+    ],
+  }),
+  pieza({
     id: "a1e1c001-0006-4000-8000-000000000006",
     slug: "pedro-adan-torres-sala-sistemas",
-    titulo: "Pedro Adán Torres: del anuncio del sueldo a la sala inaugurada",
+    titulo: "Pedro Adán Torres, moná ri Palenge: la cara que volvió con la sala",
     seccion: "gente",
     formato: "perfil",
-    fecha_publicacion: "2026-09-15T12:00:00-05:00",
+    fecha_publicacion: "2026-09-15T16:00:00-05:00",
     foto_url: "/semilla/estatua-benkos-wehwalt.jpg",
     pie_foto:
       "Pedestal de Benkos Biohó en la plaza de Palenque, 5 de febrero de 2009. Foto: Wehwalt / Wikimedia Commons (CC BY-SA 3.0). Recorte 3:2. No es retrato de Torres ni la sala de cómputo.",
     audio_url: null,
     duracion: null,
     entradilla:
-      "En junio prometió el 100 % del salario de la Cámara para una sala en Benkos Biohó. Esa sala se inauguró el 15 de septiembre del 2026.",
-    cuerpo: `${LLAMADO_PREGON}: Pedro Adán Torres Pérez, abogado y líder del pueblo, llegó a la Cámara de Representantes en junio. No ganó el primer renglón. Iba segundo en la lista del Partido Demócrata Colombiano —el que él fundó, del que es presidente y representante legal— y entró cuando aceptaron la renuncia de Ana Rogelia Monsalve Álvarez. El Universal lo dató el 19 de junio. El Afro Bogotano dice que asumió el miércoles de esa semana.
+      "Moná ri Palenge: hijo de Palenque. Excongresista por la circunscripción afro. El primer perfil de esta casa. La sala de cómputo es lo que volvió al pueblo.",
+    cuerpo: `${LLAMADO_PREGON}: este es el primer perfil de Gente. Una persona de Palenque, con nombre. Empieza Pedro Adán Torres Pérez.
 
-El periodo que le toca es el que queda del 2025-2026. No es una curul de cuatro años recién estrenada. Es el resto de la que había.
+Moná ri Palenge. Hijo de Palenque. En palenquero, hijo es moná y el pueblo es Palenge: así lo enseña la cartilla Lengua ri Palenge Gente. Él lo dijo en castellano, en junio, cuando llegó a la Cámara: «Soy hijo de Palenque». No vamos a inventar que lo cantó en lengua. La frase cabe porque es la suya.
 
-Ese mismo junio puso esto sobre la mesa: el 100 % de su salario de representante, dijo, iba para adecuar y dotar una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. «Soy hijo de Palenque», dijo. Que las familias se esfuerzan y que a los jóvenes de aquí se les niegan cosas que en otros lados parecen del diario. Prometió cuentas públicas: compras, plata, resultados, con la comunidad educativa y las directivas.
+Abogado, líder del pueblo, fundador, presidente y representante legal del Partido Demócrata Colombiano —el que se declara primer partido de origen palenquero. En junio de 2026 ocupó, los días que faltaban del periodo, la curul de la circunscripción especial afrodescendiente que dejó Ana Rogelia Monsalve Álvarez. Iba segundo en la lista. El Universal lo dató el 19 de junio. El Afro Bogotano dice que asumió el miércoles de esa semana. Esa legislatura cerró el 20 de julio. Hoy es excongresista. El partido, en cambio, se quedó a la vista: El Universal y Diario La Libertad escribieron en junio que tenía un senador y tres representantes.
 
-En julio el Partido Demócrata Colombiano —el que él fundó y preside— hizo Convención Nacional en Palenque. Dijo que el partido nació aquí y que no se ha ido. La personería 4033 se la entregaron en este pueblo en 2022. Eso no es ficha de vida: es el partido. El detalle está en Comunidad.
+Ese mismo junio puso el sueldo sobre la mesa: el 100 % del salario de representante, dijo, iba para adecuar y dotar una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Que las familias se esfuerzan y que a los jóvenes de aquí se les niegan cosas que en otros lados parecen del diario. Prometió cuentas públicas: compras, plata, resultados, con la comunidad educativa y las directivas. Diario La Libertad recogió también esto: que el liderazgo tiene sentido cuando se pone al servicio, y que servir pesa más que el puesto.
 
-Esa sala se inauguró el 15 de septiembre del 2026. No se quedó en el comunicado. El martes abrió con 25 portátiles, UPS y reguladores de voltaje, y una charla. La donación va con el programa Kuagro Tech y la Fundación Código Abierto, para que los muchachos aprendan a programar y a usar inteligencia artificial. El detalle de ese día está en Educación.
+Ahí está el ángulo. El partido pone la cara por Palenque. Se ve en Colombia. Y lo que se gana afuera se vuelve al territorio. La sala —inaugurada el 15 de septiembre del 2026, 25 portátiles, UPS, reguladores, Kuagro Tech— es el ejemplo. No se quedó en el comunicado.
+
+En julio, ya fuera de la curul, el partido hizo Convención Nacional en Palenque. Dijo que nació aquí y que no se ha ido. El detalle está en Comunidad. El de la sala, en Educación.
 
 No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Biohó, el nombre de la escuela.`,
     cita: {
@@ -368,16 +436,24 @@ No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Bi
     },
     fuentes: [
       {
-        texto: "El Chakero — el partido dice que nació en Palenque (Comunidad)",
+        texto: "El Chakero — el partido pone la cara de Palenque (Comunidad)",
         url: "/comunidad/partido-democrata-nacio-en-palenque/",
+      },
+      {
+        texto: "El Chakero — verse en el país y volver al pueblo (Territorio)",
+        url: "/territorio/pdc-cara-de-palenque-en-el-pais/",
       },
       {
         texto: "El Chakero, 15 sep 2026 — inauguración de la sala (Educación)",
         url: "/educacion/kuagro-tech-inauguran-sala-computo/",
       },
       {
-        texto: "El Universal, 19 jun 2026 — curul y anuncio de la sala de sistemas",
+        texto: "El Universal, 19 jun 2026 — curul, sueldo y periodo que faltaba",
         url: "https://www.eluniversal.com.co/politica/2026/06/18/el-representante-a-la-camara-que-destinara-todo-su-salario-a-una-sala-de-sistemas-en-palenque/",
+      },
+      {
+        texto: "Diario La Libertad, 19 jun 2026 — «Soy hijo de Palenque» y devolver al pueblo",
+        url: "https://diariolalibertad.com/2026/06/19/pedro-adan-torres-llegara-a-la-camara-de-representantes-y-donara-el-100-de-su-salario-para-una-sala-de-sistemas-en-palenque/",
       },
       {
         texto: "El Afro Bogotano, 19 jun 2026 — misma declaración",
@@ -386,6 +462,18 @@ No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Bi
       {
         texto: "Noticias y Respuestas, 17 jun 2026 — segundo renglón de la lista",
         url: "https://noticiasyrespuestas.com/2026/06/17/estudiantes-de-palenque-tendran-sala-de-sistemas-gracias-a-curul-de-pedro-adan-torres-en-la-camara/",
+      },
+      {
+        texto: "Cámara de Representantes — ficha de Ana Rogelia Monsalve, circunscripción afro",
+        url: "https://www.camara.gov.co/representantes/ana-rogelia-monsalve-alvarez/",
+      },
+      {
+        texto: "Poder Legislativo / Cámara, 17 feb 2026 — esa curul afro hasta el 20 de julio",
+        url: "https://poderlegislativo.camara.gov.co/2026/02/17/las-comunidades-afrodescendientes-en-el-congreso-una-historia-gris-hasta-ahora/",
+      },
+      {
+        texto: "Lengua ri Palenge Gente (ICESI) — moná: hijo/a",
+        url: "https://www.icesi.edu.co/papeldecolgadura/images/pdc/vol15/PDC_15_17.pdf",
       },
       {
         texto: "Foto: Wehwalt, CC BY-SA 3.0 — Wikimedia Commons",
