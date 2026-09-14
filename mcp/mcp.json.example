@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "el-chakero": {
+      "type": "stdio",
+      "command": "${workspaceFolder}/mcp/node_modules/.bin/tsx",
+      "args": ["${workspaceFolder}/mcp/src/index.ts"],
+      "envFile": "${workspaceFolder}/mcp/.env"
+    }
+  }
+}
