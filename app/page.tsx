@@ -8,7 +8,7 @@ import { fechaCorta } from "@/lib/fecha";
 export const revalidate = 120;
 
 export default async function Portada() {
-  const { pregon, tarjetas, gente, agenda, usandoSemilla } = await cargarPortada();
+  const { pregon, tarjetas, gente, agenda } = await cargarPortada();
 
   return (
     <SitioShell seccionActiva="portada">
@@ -16,24 +16,14 @@ export default async function Portada() {
         <Pregon pieza={pregon} />
 
         <div className="doc">
-          {usandoSemilla ? (
-            <p className="aviso">
-              Estas piezas están sembradas en el código, no en Supabase. Cuando el
-              CMS publique, reemplazan a esta semilla.
-            </p>
-          ) : null}
-
           <section className="bloque" aria-labelledby="recientes">
             <h2 id="recientes" className="ui" style={{ fontSize: "var(--t-21)" }}>
               Lo reciente
             </h2>
             {tarjetas.length === 0 ? (
               <div className="vacio">
-                <h3>Aún no hay tarjetas</h3>
-                <p>
-                  La portada admite hasta nueve piezas. Cuando el equipo publique,
-                  aparecen aquí debajo del pregón.
-                </p>
+                <h3>Hoy no hay más piezas en portada</h3>
+                <p>Las noticias del día van debajo del pregón, en esta misma página.</p>
               </div>
             ) : (
               <div className="rejilla-tres">
@@ -53,11 +43,8 @@ export default async function Portada() {
                 <Tarjeta pieza={gente} />
               ) : (
                 <div className="vacio">
-                  <h3>Todavía no hay perfil</h3>
-                  <p>
-                    Aquí va una persona de Palenque: foto grande y una cita. El
-                    hueco queda listo.
-                  </p>
+                  <h3>Esta semana no hay perfil</h3>
+                  <p>Aquí va una persona de Palenque: foto y una cita.</p>
                 </div>
               )}
             </div>
@@ -67,7 +54,7 @@ export default async function Portada() {
               </h2>
               {agenda.length === 0 ? (
                 <div className="vacio">
-                  <p>No hay fechas cargadas. La agenda se llena desde el CMS.</p>
+                  <p>No hay fechas próximas en la agenda.</p>
                 </div>
               ) : (
                 <ol>

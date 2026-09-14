@@ -1,16 +1,15 @@
+import { LLAMADO_PREGON } from "./site";
 import type { EventoAgenda, PiezaPublica } from "./supabase/tipos";
 
 /**
- * Piezas temporales en código mientras no hay insert en Supabase.
- * Mismo shape que una `pieza` publicada. Cuando el CMS escriba, borrar este
- * archivo y el fallback en `lib/contenido.ts`.
- *
+ * Piezas en código cuando la base no tiene publicadas.
+ * Mismo shape que una `pieza` publicada.
  * Fotos en `public/semilla/`: Wikimedia Commons, recorte 3:2. Créditos en pie_foto.
  */
 const AUTOR = { nombre: "Redacción El Chakero" };
 
 const TRANSPARENCIA_SEMILLA =
-  "Semilla en el código, no salió del CMS. El Chakero no estaba en esas salas: se armó con lo que publicaron otros medios, citados al pie. Las fotos son de Wikimedia Commons, recortadas a 3:2; no son del hecho que se cuenta. No hay pregón en audio todavía. Si usted sí estuvo y algo quedó mal, mándelo por el canal.";
+  "El Chakero no estuvo en esas salas: la pieza se armó con lo que publicaron otros medios, citados al pie. Las fotos son de Wikimedia Commons, recortadas a 3:2; no son del hecho que se cuenta. Si usted sí estuvo y algo quedó mal, mándelo por el canal.";
 
 function pieza(
   datos: Omit<PiezaPublica, "estado" | "motivo_retiro" | "autor" | "semilla" | "transparencia"> & {
@@ -42,7 +41,7 @@ export const SEMILLA_PIEZAS: PiezaPublica[] = [
     duracion: null,
     entradilla:
       "El 15 de septiembre de 2026 se inaugura la sala que donó Pedro Adán Torres: 25 portátiles, UPS y reguladores. Hay charla. Entra en el programa Kuagro Tech, con Fundación Código Abierto.",
-    cuerpo: `Oigan bien, Palenque: este martes 15 de septiembre se inaugura la sala de cómputo.
+    cuerpo: `${LLAMADO_PREGON}: este martes 15 de septiembre se inaugura la sala de cómputo.
 
 La donó Pedro Adán Torres. En junio, cuando llegó a la Cámara, dijo que el sueldo iba para una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Ese martes la sala se abre: 25 portátiles. Para que no se las coma el voltaje, van con UPS y reguladores.
 
@@ -52,7 +51,7 @@ La donación entra en el programa Kuagro Tech, con la Fundación Código Abierto
 
 La foto es de archivo: un patio de escuela en Palenque, 2007. No es la sala del martes. Retrato de Torres tampoco hay con licencia.`,
     transparencia:
-      "Dato de dirección (Anuar): inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. Foto de Wikimedia, no del acto. Si el inventario o el aviso de la charla quedó distinto, mándelo por el canal.",
+      "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. Foto de Wikimedia, no del acto. Si el inventario o el aviso de la charla quedó distinto, mándelo por el canal.",
     fuentes: [
       {
         texto: "El anuncio de junio, cuando Torres prometió el sueldo — perfil en Gente",
@@ -78,7 +77,7 @@ La foto es de archivo: un patio de escuela en Palenque, 2007. No es la sala del 
     duracion: null,
     entradilla:
       "El 5 de agosto se juntaron más de 200 en la Casa de la Cultura. Agosto y septiembre son los meses de la consulta previa. Todavía no hay alcaldía. Hay mesa.",
-    cuerpo: `Oigan bien, Palenque: no es que ya seamos municipio. Es que por fin se sentó la mesa.
+    cuerpo: `${LLAMADO_PREGON}: no es que ya seamos municipio. Es que por fin se sentó la mesa.
 
 El 5 de agosto, en la Casa de la Cultura, la Gobernación de Bolívar abrió la etapa que llama Preconsulta y Apertura. Dicen que fueron más de doscientos: Consejo Comunitario, autoridades étnicas, organizaciones, gente del departamento y de la nación. El proyecto de ordenanza busca crear el municipio de San Basilio de Palenque y separarlo, en lo administrativo, de Mahates.
 
@@ -211,7 +210,7 @@ Si Yo Amo Palenque o alguien del proceso quiere pasar fechas, nombres y dónde s
     duracion: null,
     entradilla:
       "La 41ª edición ya está en los calendarios: cuatro días en Palenque, como desde 2019. La programación menuda de este año todavía no la tenemos de la Corporación.",
-    cuerpo: `Oigan bien, Palenque: el tambor de octubre ya tiene números en el almanaque. Varios calendarios —Cuándo Pasa, Agenda del Mar, el de fiestas de Colombia— ponen la 41ª edición del Festival de Tambores y Expresiones Culturales del viernes 9 al lunes 12 de octubre de 2026, en San Basilio de Palenque.
+    cuerpo: `${LLAMADO_PREGON}: el tambor de octubre ya tiene números en el almanaque. Varios calendarios —Cuándo Pasa, Agenda del Mar, el de fiestas de Colombia— ponen la 41ª edición del Festival de Tambores y Expresiones Culturales del viernes 9 al lunes 12 de octubre de 2026, en San Basilio de Palenque.
 
 Lo organiza, como siempre, la Corporación Festival de Tambores de Palenque. El festival viene desde 1985. Hasta 2018 duraba tres días; desde 2019 son cuatro. Eso no es noticia nueva. La noticia de este mes es la fecha de esta edición, que ya circula para que la diáspora y el pueblo marquen el calendario.
 
@@ -298,7 +297,7 @@ Un perfil de verdad pediría una conversación en el patio, no tres frases de ru
     duracion: null,
     entradilla:
       "En junio prometió el 100 % del salario de la Cámara para una sala en Benkos Biohó. Esa sala se inauguró el 15 de septiembre del 2026.",
-    cuerpo: `Oigan bien, Palenque: Pedro Adán Torres Pérez, abogado y líder del pueblo, llegó a la Cámara de Representantes en junio. No ganó el primer renglón. Iba segundo en la lista del Partido Demócrata Colombiano —el que él fundó, del que es presidente y representante legal— y entró cuando aceptaron la renuncia de Ana Rogelia Monsalve Álvarez. El Universal lo dató el 19 de junio. El Afro Bogotano dice que asumió el miércoles de esa semana.
+    cuerpo: `${LLAMADO_PREGON}: Pedro Adán Torres Pérez, abogado y líder del pueblo, llegó a la Cámara de Representantes en junio. No ganó el primer renglón. Iba segundo en la lista del Partido Demócrata Colombiano —el que él fundó, del que es presidente y representante legal— y entró cuando aceptaron la renuncia de Ana Rogelia Monsalve Álvarez. El Universal lo dató el 19 de junio. El Afro Bogotano dice que asumió el miércoles de esa semana.
 
 El periodo que le toca es el que queda del 2025-2026. No es una curul de cuatro años recién estrenada. Es el resto de la que había.
 

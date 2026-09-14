@@ -17,9 +17,7 @@ export function Tarjeta({ pieza }: Props) {
         {pieza.foto_url ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={pieza.foto_url} alt={pieza.pie_foto ?? pieza.titulo} />
-        ) : (
-          "Foto 3:2"
-        )}
+        ) : null}
       </div>
       <h3>
         <Link href={href}>{pieza.titulo}</Link>

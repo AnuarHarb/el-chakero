@@ -65,11 +65,6 @@ export default async function Articulo({ params }: Props) {
             {pieza.fecha_publicacion ? ` · ${fechaCorta(pieza.fecha_publicacion)}` : ""}
             {pieza.duracion ? ` · Escúchalo en ${pieza.duracion}` : ""}
           </p>
-          {pieza.semilla ? (
-            <p className="aviso">
-              Semilla en el código, no publicada por el CMS. Fuentes al pie.
-            </p>
-          ) : null}
           {pieza.estado === "retirada" ? (
             <p className="error" role="status">
               Esta pieza fue retirada

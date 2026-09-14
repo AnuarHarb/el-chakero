@@ -787,6 +787,39 @@ textarea:focus-visible {
   margin: var(--s-3) 0 var(--s-4);
 }
 
+.articulo h2 {
+  font-size: var(--t-28);
+  font-variation-settings: "opsz" 32;
+  line-height: 1.1;
+  margin: var(--s-8) 0 var(--s-3);
+  max-width: var(--medida);
+}
+
+.articulo h3 {
+  font-family: var(--display);
+  font-size: var(--t-21);
+  font-variation-settings: "opsz" 24;
+  line-height: 1.2;
+  margin: var(--s-6) 0 var(--s-2);
+  max-width: var(--medida);
+}
+
+.articulo ul {
+  max-width: var(--medida);
+  margin: 0 0 var(--s-4);
+  padding-left: 1.2em;
+}
+
+.articulo li {
+  margin-bottom: var(--s-2);
+}
+
+.articulo address {
+  font-style: normal;
+  max-width: var(--medida);
+  margin: 0 0 var(--s-4);
+}
+
 .articulo .entradilla {
   font-size: var(--t-21);
   line-height: 1.4;
