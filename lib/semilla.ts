@@ -29,6 +29,42 @@ function pieza(
 
 export const SEMILLA_PIEZAS: PiezaPublica[] = [
   pieza({
+    id: "a1e1c001-0007-4000-8000-000000000007",
+    slug: "kuagro-tech-inauguran-sala-computo",
+    titulo: "Este martes inauguran la sala de cómputo: 25 portátiles",
+    seccion: "educacion",
+    formato: "noticia",
+    fecha_publicacion: "2026-09-15T18:00:00-05:00",
+    foto_url: "/semilla/calle-palenque-2007.jpg",
+    pie_foto:
+      "Patio de una escuela en San Basilio de Palenque, 1 de diciembre de 2007. Foto: Kosmel Bonfante / Wikimedia Commons (CC BY 3.0). Recorte 3:2. No es la sala inaugurada el 15 de septiembre de 2026.",
+    audio_url: null,
+    duracion: null,
+    entradilla:
+      "El 15 de septiembre de 2026 se inaugura la sala que donó Pedro Adán Torres: 25 portátiles, UPS y reguladores. Hay charla. Entra en el programa Kuagro Tech, con Fundación Código Abierto.",
+    cuerpo: `Oigan bien, Palenque: este martes 15 de septiembre se inaugura la sala de cómputo.
+
+La donó Pedro Adán Torres. En junio, cuando llegó a la Cámara, dijo que el sueldo iba para una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Ese martes la sala se abre: 25 portátiles. Para que no se las coma el voltaje, van con UPS y reguladores.
+
+También hay una charla. No vamos a inventar la hora ni quién habla: eso no nos lo pasaron. Si la escuela o Kuagro Tech manda el aviso fino, aquí se completa.
+
+La donación entra en el programa Kuagro Tech, con la Fundación Código Abierto. Lo que sigue no es solo estrenar máquinas: van a haber actividades para que los muchachos aprendan a programar y a usar inteligencia artificial. Eso es lo que hay. Ni lista de talleres ni cupos. El dato es el programa y con quién va.
+
+La foto es de archivo: un patio de escuela en Palenque, 2007. No es la sala del martes. Retrato de Torres tampoco hay con licencia.`,
+    transparencia:
+      "Dato de dirección (Anuar): inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. Foto de Wikimedia, no del acto. Si el inventario o el aviso de la charla quedó distinto, mándelo por el canal.",
+    fuentes: [
+      {
+        texto: "El anuncio de junio, cuando Torres prometió el sueldo — perfil en Gente",
+        url: "/gente/pedro-adan-torres-sala-sistemas/",
+      },
+      {
+        texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:San_basilio_de_palenque_-_panoramio_(2).jpg",
+      },
+    ],
+  }),
+  pieza({
     id: "a1e1c001-0001-4000-8000-000000000001",
     slug: "consulta-previa-municipio",
     titulo: "Palenque ya sentó la mesa para ser municipio",
@@ -251,34 +287,36 @@ Un perfil de verdad pediría una conversación en el patio, no tres frases de ru
   pieza({
     id: "a1e1c001-0006-4000-8000-000000000006",
     slug: "pedro-adan-torres-sala-sistemas",
-    titulo: "Pedro Adán Torres dice que su sueldo de la Cámara va a la escuela",
+    titulo: "Pedro Adán Torres: del anuncio del sueldo a la sala inaugurada",
     seccion: "gente",
     formato: "perfil",
-    fecha_publicacion: "2026-06-19T19:00:00-05:00",
+    fecha_publicacion: "2026-09-15T12:00:00-05:00",
     foto_url: "/semilla/estatua-benkos-wehwalt.jpg",
     pie_foto:
-      "Pedestal de Benkos Biohó en la plaza de Palenque, 5 de febrero de 2009. Foto: Wehwalt / Wikimedia Commons (CC BY-SA 3.0). Recorte 3:2. No es retrato de Torres ni la sala de sistemas.",
+      "Pedestal de Benkos Biohó en la plaza de Palenque, 5 de febrero de 2009. Foto: Wehwalt / Wikimedia Commons (CC BY-SA 3.0). Recorte 3:2. No es retrato de Torres ni la sala de cómputo.",
     audio_url: null,
     duracion: null,
     entradilla:
-      "El palenquero asumió la curul que dejó Ana Rogelia Monsalve. Anunció que el 100 % de su salario como representante irá a una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Es el anuncio. No hay todavía inventario de computadores.",
+      "En junio prometió el 100 % del salario de la Cámara para una sala en Benkos Biohó. Esa sala se inauguró el 15 de septiembre del 2026.",
     cuerpo: `Oigan bien, Palenque: Pedro Adán Torres Pérez, abogado y líder del pueblo, llegó a la Cámara de Representantes en junio. No ganó el primer renglón. Iba segundo en la lista del Partido Demócrata Colombiano —el que él fundó, del que es presidente y representante legal— y entró cuando aceptaron la renuncia de Ana Rogelia Monsalve Álvarez. El Universal lo dató el 19 de junio. El Afro Bogotano dice que asumió el miércoles de esa semana.
 
 El periodo que le toca es el que queda del 2025-2026. No es una curul de cuatro años recién estrenada. Es el resto de la que había.
 
-Lo que él puso sobre la mesa, el mismo día, es esto: el 100 % de su salario de representante, dijo, va para adecuar y dotar una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. «Soy hijo de Palenque», dijo. Que las familias se esfuerzan y que a los jóvenes de aquí se les niegan cosas que en otros lados parecen del diario. Que quiere que el paso por el Congreso deje algo que se quede.
+Ese mismo junio puso esto sobre la mesa: el 100 % de su salario de representante, dijo, iba para adecuar y dotar una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. «Soy hijo de Palenque», dijo. Que las familias se esfuerzan y que a los jóvenes de aquí se les niegan cosas que en otros lados parecen del diario. Prometió cuentas públicas: compras, plata, resultados, con la comunidad educativa y las directivas.
 
-Prometió cuentas públicas: compras, plata, resultados, con la comunidad educativa y las directivas de la institución. El Afro Bogotano y El Universal citan casi las mismas frases. Eso huele a comunicado de partido, no a visita al patio de la escuela.
+Esa sala se inauguró el 15 de septiembre del 2026. No se quedó en el comunicado. El martes abrió con 25 portátiles, UPS y reguladores de voltaje, y una charla. La donación va con el programa Kuagro Tech y la Fundación Código Abierto, para que los muchachos aprendan a programar y a usar inteligencia artificial. El detalle de ese día está en Educación.
 
-El Chakero no va a decir que la sala ya está. No hay foto de los equipos, ni fecha de inauguración, ni plata contada. Hay un anuncio. Si la escuela, las directivas o él mismo mandan el primer inventario, aquí se publica. Hasta entonces, es lo que dijo, no lo que se construyó.
-
-No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Biohó, el nombre de la escuela. Si Torres o la institución pasan una foto 3:2 con permiso, se cambia.`,
+No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Biohó, el nombre de la escuela.`,
     cita: {
       texto:
         "San Basilio de Palenque le ha entregado mucho a Colombia, historia, libertad, resistencia y patrimonio cultural. Hoy quiero devolverle a mi tierra una pequeña parte de todo lo que me ha dado.",
       fuente: "Pedro Adán Torres Pérez, citado por El Universal y El Afro Bogotano, junio de 2026",
     },
     fuentes: [
+      {
+        texto: "El Chakero, 15 sep 2026 — inauguración de la sala (Educación)",
+        url: "/educacion/kuagro-tech-inauguran-sala-computo/",
+      },
       {
         texto: "El Universal, 19 jun 2026 — curul y anuncio de la sala de sistemas",
         url: "https://www.eluniversal.com.co/politica/2026/06/18/el-representante-a-la-camara-que-destinara-todo-su-salario-a-una-sala-de-sistemas-en-palenque/",
