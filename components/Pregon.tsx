@@ -45,6 +45,13 @@ export function Pregon({ pieza }: Props) {
       <h2>
         <Link href={href}>{pieza.titulo}</Link>
       </h2>
+      {pieza.foto_url ? (
+        <figure>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={pieza.foto_url} alt={pieza.pie_foto ?? pieza.titulo} />
+          {pieza.pie_foto ? <figcaption>{pieza.pie_foto}</figcaption> : null}
+        </figure>
+      ) : null}
       {pieza.entradilla ? <p>{pieza.entradilla}</p> : null}
       <p className="meta">
         {nombreSeccion(pieza.seccion)}

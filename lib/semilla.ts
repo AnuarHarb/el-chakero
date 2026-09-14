@@ -4,7 +4,8 @@ import type { EventoAgenda, PiezaPublica } from "./supabase/tipos";
 /**
  * Piezas en código cuando la base no tiene publicadas.
  * Mismo shape que una `pieza` publicada.
- * Fotos en `public/semilla/`: Wikimedia Commons, recorte 3:2. Créditos en pie_foto.
+ * Fotos en `public/semilla/`: Wikimedia Commons (recorte 3:2) salvo la de la
+ * inauguración de la sala, que es del acto. Créditos en pie_foto.
  */
 const AUTOR = { nombre: "Redacción El Chakero" };
 
@@ -34,9 +35,9 @@ export const SEMILLA_PIEZAS: PiezaPublica[] = [
     seccion: "educacion",
     formato: "noticia",
     fecha_publicacion: "2026-09-15T18:00:00-05:00",
-    foto_url: "/semilla/calle-palenque-2007.jpg",
+    foto_url: "/semilla/sala-computo-inauguracion.jpg",
     pie_foto:
-      "Patio de una escuela en San Basilio de Palenque, 1 de diciembre de 2007. Foto: Kosmel Bonfante / Wikimedia Commons (CC BY 3.0). Recorte 3:2. No es la sala inaugurada el 15 de septiembre de 2026.",
+      "La sala de cómputo el día de la inauguración, 15 de septiembre de 2026.",
     audio_url: null,
     duracion: null,
     entradilla:
@@ -49,17 +50,13 @@ También hay una charla. No vamos a inventar la hora ni quién habla: eso no nos
 
 La donación entra en el programa Kuagro Tech, con la Fundación Código Abierto. Lo que sigue no es solo estrenar máquinas: van a haber actividades para que los muchachos aprendan a programar y a usar inteligencia artificial. Eso es lo que hay. Ni lista de talleres ni cupos. El dato es el programa y con quién va.
 
-La foto es de archivo: un patio de escuela en Palenque, 2007. No es la sala del martes. Retrato de Torres tampoco hay con licencia.`,
+La foto es de la sala ese martes, con el listón todavía puesto. Retrato de Torres no hay con licencia.`,
     transparencia:
-      "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. Foto de Wikimedia, no del acto. Si el inventario o el aviso de la charla quedó distinto, mándelo por el canal.",
+      "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. La foto es de la sala ese día. Si el inventario o el aviso de la charla quedó distinto, mándelo por el canal.",
     fuentes: [
       {
         texto: "El anuncio de junio, cuando Torres prometió el sueldo — perfil en Gente",
         url: "/gente/pedro-adan-torres-sala-sistemas/",
-      },
-      {
-        texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:San_basilio_de_palenque_-_panoramio_(2).jpg",
       },
     ],
   }),
