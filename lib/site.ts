@@ -6,8 +6,40 @@ export const CANAL_WHATSAPP =
   process.env.NEXT_PUBLIC_WHATSAPP_CHANNEL ??
   "https://whatsapp.com/channel/0029Vb8FvlmLI8YeFZWwIs23";
 
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "http://127.0.0.1:43173";
+function urlSitioAbsoluta(valor: string | undefined, respaldo: string): string {
+  const crudo = valor?.trim();
+  if (!crudo) return respaldo;
+
+  for (const candidato of [crudo, `https://${crudo}`]) {
+    try {
+      const url = new URL(candidato);
+      if (url.protocol === "http:" || url.protocol === "https:") {
+        return url.origin;
+      }
+    } catch {
+      // hostname sin protocolo, o valor que no es URL
+    }
+  }
+
+  return respaldo;
+}
+
+function respaldoUrlSitio(): string {
+  const vercel =
+    process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim() ||
+    process.env.VERCEL_URL?.trim();
+  if (vercel) {
+    return urlSitioAbsoluta(vercel, `https://${DOMINIO}`);
+  }
+  return "http://127.0.0.1:43173";
+}
+
+// `metadataBase` exige una URL absoluta. En Vercel, NEXT_PUBLIC_SITE_URL
+// a veces llega vacío o como `elchakero.com` (sin https) y `new URL()` tumba el build.
+export const SITE_URL = urlSitioAbsoluta(
+  process.env.NEXT_PUBLIC_SITE_URL,
+  respaldoUrlSitio(),
+);
 
 export const SECCIONES = [
   { slug: "comunidad", etiqueta: "Comunidad" },
