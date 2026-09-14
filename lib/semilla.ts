@@ -41,23 +41,63 @@ export const SEMILLA_PIEZAS: PiezaPublica[] = [
     audio_url: null,
     duracion: null,
     entradilla:
-      "El 15 de septiembre de 2026 se inaugura la sala que donó Pedro Adán Torres, excongresista por la circunscripción afro: 25 portátiles, UPS y reguladores. El sueldo de la Cámara volvió al pueblo. Hay charla. Entra en Kuagro Tech, con Fundación Código Abierto.",
+      "El 15 de septiembre de 2026 se inaugura la sala que donó Pedro Adán Torres, excongresista por la circunscripción afro: 25 portátiles, UPS y reguladores. No es un regalo suelto: es el arranque de ORICA, con Fundación Código Abierto y Kuagro Tech.",
     cuerpo: `${LLAMADO_PREGON}: este martes 15 de septiembre se inaugura la sala de cómputo.
 
 La donó Pedro Adán Torres Pérez, palenquero, excongresista por la circunscripción especial afrodescendiente. En junio, cuando ocupó —los días que faltaban del periodo— la curul que dejó Ana Rogelia Monsalve, dijo que el 100 % del sueldo de la Cámara iba para una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Ese martes la sala se abre: 25 portátiles. Para que no se las coma el voltaje, van con UPS y reguladores.
 
-Eso es el ejemplo. El Partido Demócrata Colombiano —el que él fundó y preside, el que se declara nacido aquí— pone la cara por Palenque en el país. Se ve. Y lo que se gana afuera, si sirve, se vuelve al territorio. Aquí se volvió en máquinas, en la escuela.
+No es un regalo de una vez y ya. Esa sala es el comienzo de ORICA, un centro de innovación tecnológica. Lo impulsa Torres. Lo acompaña la Fundación Código Abierto. El apuntar es grande: que el Caribe se vuelva epicentro de tecnología y que Palenque sea territorio tecnológico. Aquí no hay presupuesto ni lista de invitados. El dato es el nombre, el arranque y con quién va.
 
-También hay una charla. No vamos a inventar la hora ni quién habla: eso no nos lo pasaron. Si la escuela o Kuagro Tech manda el aviso fino, aquí se completa.
+Eso es el ejemplo. El Partido Demócrata Colombiano —el que él fundó y preside, el que se declara nacido aquí— pone la cara por Palenque en el país. Se ve. Y lo que se gana afuera, si sirve, se vuelve al territorio. Aquí se volvió en máquinas, en la escuela, y en el primer piso de ORICA.
+
+También hay una charla. No vamos a inventar la hora ni quién habla: eso no nos lo pasaron. Si la escuela, Kuagro Tech u ORICA manda el aviso fino, aquí se completa.
 
 La donación entra en el programa Kuagro Tech, con la Fundación Código Abierto. Lo que sigue no es solo estrenar máquinas: van a haber actividades para que los muchachos aprendan a programar y a usar inteligencia artificial. Eso es lo que hay. Ni lista de talleres ni cupos. El dato es el programa y con quién va.
 
 La foto es de la sala ese martes, con el listón todavía puesto. Retrato de Torres no hay con licencia.`,
     transparencia:
-      "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. Torres ocupó la curul afro que dejó Monsalve en los días que faltaban del periodo; para septiembre es excongresista. La foto es de la sala ese día. Si el inventario o el aviso de la charla quedó distinto, mándelo por el canal.",
+      "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. La sala es el arranque de ORICA, centro de innovación tecnológica impulsado por Torres, con el fin de que el Caribe sea epicentro tecnológico y Palenque territorio tecnológico. No hay otra fecha, ni presupuesto, ni lista de invitados. Torres ocupó la curul afro que dejó Monsalve en los días que faltaban del periodo. La foto es de la sala ese día.",
     fuentes: [
       {
         texto: "El anuncio de junio, cuando Torres prometió el sueldo — perfil en Gente",
+        url: "/gente/pedro-adan-torres-sala-sistemas/",
+      },
+      {
+        texto: "ORICA: la sala es el arranque, no el cierre (Educación)",
+        url: "/educacion/orica-centro-innovacion-palenque/",
+      },
+    ],
+  }),
+  pieza({
+    id: "a1e1c001-0011-4000-8000-000000000011",
+    slug: "orica-centro-innovacion-palenque",
+    titulo: "ORICA: la sala de cómputo es el arranque, no el cierre",
+    seccion: "educacion",
+    formato: "noticia",
+    fecha_publicacion: "2026-09-15T14:00:00-05:00",
+    foto_url: "/semilla/sala-computo-inauguracion.jpg",
+    pie_foto:
+      "La sala de cómputo el día de la inauguración, 15 de septiembre de 2026. Ahí arranca ORICA.",
+    audio_url: null,
+    duracion: null,
+    entradilla:
+      "ORICA es el centro de innovación tecnológica. Lo impulsa Pedro Adán Torres, con la Fundación Código Abierto. La sala de 25 portátiles —sueldo de la curul, Kuagro Tech— es el comienzo: Palenque territorio tecnológico, el Caribe epicentro.",
+    cuerpo: `${LLAMADO_PREGON}: la sala no se queda en 25 portátiles y un listón. Ese martes 15 de septiembre es el primer piso de ORICA, un centro de innovación tecnológica en Palenque.
+
+Lo impulsa Pedro Adán Torres Pérez —el palenquero de la curul afro, el del sueldo vuelto a Benkos Biohó—. Lo acompaña la Fundación Código Abierto. El programa que ya se nombró, Kuagro Tech, entra en ese mismo dibujo: muchachos aprendiendo a programar y a usar inteligencia artificial. No hay lista de talleres. No hay plata publicada. No hay fecha de un segundo acto. El dato es el nombre y el rumbo.
+
+El rumbo, el que se plantea, es este: que la región Caribe se vuelva epicentro de tecnología y que Palenque sea territorio tecnológico. Eso no se inventa como hecho cumplido. Se cuenta como el apuntar del centro. Si queda corto o si se agranda, se verá en el pueblo.
+
+La inauguración que sí hay es la de la sala: 25 portátiles, UPS y reguladores, una charla. Educación tiene esa pieza. Gente tiene a Torres. Aquí se dice una sola cosa más: no es un regalo suelto. Es el arranque de ORICA.`,
+    transparencia:
+      "Dato de la redacción: ORICA es el nombre del centro de innovación tecnológica; la sala del 15 de septiembre de 2026 es el arranque; lo impulsa Torres, con Fundación Código Abierto; el fin planteado es el Caribe como epicentro tecnológico y Palenque como territorio tecnológico. No hay presupuesto, ni invitados, ni otra fecha. Foto de la sala ese día.",
+    fuentes: [
+      {
+        texto: "El Chakero — inauguración de la sala, 15 sep 2026 (Educación)",
+        url: "/educacion/kuagro-tech-inauguran-sala-computo/",
+      },
+      {
+        texto: "El Chakero — perfil de Pedro Adán Torres (Gente)",
         url: "/gente/pedro-adan-torres-sala-sistemas/",
       },
     ],
@@ -263,7 +303,7 @@ El presidente y representante legal, Pedro Adán Torres Pérez —palenquero, ya
 
 La personería jurídica es la 4033 de 2022. Torres dijo en esa convención que vinieron los nueve magistrados del Consejo Nacional Electoral y se la entregaron aquí. OPICOL dató ese acto el 25 de agosto de 2022, en Palenque: primer partido de origen palenquero con personería. El CNE sigue listando esa resolución.
 
-Eso es poner la cara. Un partido que se declara del pueblo, con personería entregada en la plaza de Benkos, y que en 2026 volvió a convocar aquí. En junio, El Universal y Diario La Libertad escribieron que el partido había mantenido la personería en las legislativas y que tenía un senador y tres representantes: verse en el país. Lo que se gana allá, si sirve, se vuelve. El ejemplo está en Educación: la sala de cómputo, con el sueldo de la curul afro que Torres ocupó los días que faltaban.
+Eso es poner la cara. Un partido que se declara del pueblo, con personería entregada en la plaza de Benkos, y que en 2026 volvió a convocar aquí. En junio, El Universal y Diario La Libertad escribieron que el partido había mantenido la personería en las legislativas y que tenía un senador y tres representantes: verse en el país. Lo que se gana allá, si sirve, se vuelve. El ejemplo está en Educación: la sala de cómputo —arranque de ORICA—, con el sueldo de la curul afro que Torres ocupó los días que faltaban.
 
 En la convención Torres también dijo cifras de 2023 —87 alcaldes, 198 concejales—. Eso lo dijo él. Aquí no hay escrutinio propio. Si el acta o el padrón dicen otra cosa, el canal está abierto.`,
     cita: {
@@ -297,6 +337,10 @@ En la convención Torres también dijo cifras de 2023 —87 alcaldes, 198 concej
       {
         texto: "El Chakero — la sala de cómputo, lo que volvió al pueblo (Educación)",
         url: "/educacion/kuagro-tech-inauguran-sala-computo/",
+      },
+      {
+        texto: "El Chakero — ORICA, el centro que arranca con esa sala (Educación)",
+        url: "/educacion/orica-centro-innovacion-palenque/",
       },
       {
         texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
@@ -366,7 +410,7 @@ Verse importa. En junio de 2026, El Universal y Diario La Libertad escribieron q
 
 Torres ocupó, los días que faltaban, la curul de la circunscripción especial afrodescendiente que dejó Ana Rogelia Monsalve. El Universal habló de los días que quedaban del periodo. Poder Legislativo dató esa curul afro hasta el 20 de julio de 2026. Pasada esa fecha, Torres es excongresista. Sigue siendo presidente y representante legal del partido.
 
-Lo que se gana afuera, si sirve, se vuelve. El ejemplo no es un discurso: es la sala de cómputo de Benkos Biohó, inaugurada el 15 de septiembre, con el 100 % del sueldo que él prometió en junio. Educación tiene el inventario. Gente tiene el perfil.
+Lo que se gana afuera, si sirve, se vuelve. El ejemplo no es un discurso: es la sala de cómputo de Benkos Biohó, inaugurada el 15 de septiembre, con el 100 % del sueldo que él prometió en junio. Esa sala es el arranque de ORICA, no un regalo suelto. Educación tiene el inventario y la nota del centro. Gente tiene el perfil.
 
 La Convención de julio, en Palenque, es la otra pata: el partido dijo que nació aquí y que no se ha ido. Comunidad tiene esa sala. Aquí el dato es el trato con el territorio: cara afuera, plata y máquinas adentro. Si el partido o la escuela dicen que el dibujo es otro, el canal está abierto.`,
     transparencia:
@@ -397,6 +441,10 @@ La Convención de julio, en Palenque, es la otra pata: el partido dijo que naci�
         url: "/gente/pedro-adan-torres-sala-sistemas/",
       },
       {
+        texto: "El Chakero — ORICA, el centro que arranca con la sala (Educación)",
+        url: "/educacion/orica-centro-innovacion-palenque/",
+      },
+      {
         texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:San_basilio_de_palenque_-_panoramio_(3).jpg",
       },
@@ -415,7 +463,7 @@ La Convención de julio, en Palenque, es la otra pata: el partido dijo que naci�
     audio_url: null,
     duracion: null,
     entradilla:
-      "Moná ri Palenge: hijo de Palenque. Excongresista por la circunscripción afro. El primer perfil de esta casa. La sala de cómputo es lo que volvió al pueblo.",
+      "Moná ri Palenge: hijo de Palenque. Excongresista por la circunscripción afro. El primer perfil de esta casa. La sala de cómputo —arranque de ORICA— es lo que volvió al pueblo.",
     cuerpo: `${LLAMADO_PREGON}: este es el primer perfil de Gente. Una persona de Palenque, con nombre. Empieza Pedro Adán Torres Pérez.
 
 Moná ri Palenge. Hijo de Palenque. En palenquero, hijo es moná y el pueblo es Palenge: así lo enseña la cartilla Lengua ri Palenge Gente. Él lo dijo en castellano, en junio, cuando llegó a la Cámara: «Soy hijo de Palenque». No vamos a inventar que lo cantó en lengua. La frase cabe porque es la suya.
@@ -424,7 +472,7 @@ Abogado, líder del pueblo, fundador, presidente y representante legal del Parti
 
 Ese mismo junio puso el sueldo sobre la mesa: el 100 % del salario de representante, dijo, iba para adecuar y dotar una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Que las familias se esfuerzan y que a los jóvenes de aquí se les niegan cosas que en otros lados parecen del diario. Prometió cuentas públicas: compras, plata, resultados, con la comunidad educativa y las directivas. Diario La Libertad recogió también esto: que el liderazgo tiene sentido cuando se pone al servicio, y que servir pesa más que el puesto.
 
-Ahí está el ángulo. El partido pone la cara por Palenque. Se ve en Colombia. Y lo que se gana afuera se vuelve al territorio. La sala —inaugurada el 15 de septiembre del 2026, 25 portátiles, UPS, reguladores, Kuagro Tech— es el ejemplo. No se quedó en el comunicado.
+Ahí está el ángulo. El partido pone la cara por Palenque. Se ve en Colombia. Y lo que se gana afuera se vuelve al territorio. La sala —inaugurada el 15 de septiembre del 2026, 25 portátiles, UPS, reguladores, Kuagro Tech— no es un regalo suelto: es el arranque de ORICA, el centro de innovación tecnológica, con la Fundación Código Abierto. El apuntar: Caribe como epicentro de tecnología, Palenque como territorio tecnológico. El detalle de ORICA está en Educación.
 
 En julio, ya fuera de la curul, el partido hizo Convención Nacional en Palenque. Dijo que nació aquí y que no se ha ido. El detalle está en Comunidad. El de la sala, en Educación.
 
@@ -446,6 +494,10 @@ No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Bi
       {
         texto: "El Chakero, 15 sep 2026 — inauguración de la sala (Educación)",
         url: "/educacion/kuagro-tech-inauguran-sala-computo/",
+      },
+      {
+        texto: "El Chakero — ORICA, el centro que arranca con esa sala (Educación)",
+        url: "/educacion/orica-centro-innovacion-palenque/",
       },
       {
         texto: "El Universal, 19 jun 2026 — curul, sueldo y periodo que faltaba",
