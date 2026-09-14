@@ -693,6 +693,24 @@ input:focus-visible {
   margin-bottom: var(--s-6);
 }
 
+.articulo figure {
+  margin: 0 0 var(--s-6);
+  max-width: var(--medida);
+}
+
+.articulo figure img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+.articulo figcaption {
+  font-size: var(--t-14);
+  color: var(--humo);
+  margin-top: var(--s-2);
+}
+
 .fuentes {
   margin-top: var(--s-8);
   padding-top: var(--s-4);
