@@ -16,7 +16,7 @@ export default async function Piezas() {
 
   if (!supabaseListo) {
     return (
-      <main>
+      <main className="doc bloque">
         <h1>Piezas</h1>
         <div className="error" role="status">
           <p>
@@ -55,8 +55,8 @@ export default async function Piezas() {
       <p>
         Título, sección, noticia, entradilla, cuerpo, foto 3:2 con pie y
         pregón. Se crea como idea o como borrador. A revisión no va si falta
-        lo que ya pide SQL: título, entradilla, foto, pie; y si es noticia,
-        audio con duración. El estado no se cambia a mano.
+        título, entradilla, foto, pie; y si es noticia, audio con duración. El
+        estado no se cambia a mano.
       </p>
       {error ? (
         <p className="error" role="alert">

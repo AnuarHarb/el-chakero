@@ -10,7 +10,7 @@ export default async function AdminInicio() {
 
   if (!supabaseListo) {
     return (
-      <main>
+      <main className="doc bloque">
         <h1>Cáscara del equipo</h1>
         <div className="error" role="status">
           <p>
