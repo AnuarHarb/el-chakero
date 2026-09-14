@@ -264,6 +264,24 @@ textarea:focus-visible {
   position: relative;
 }
 
+.pregon figure {
+  position: relative;
+  margin: 0 0 var(--s-4);
+  max-width: 42rem;
+}
+
+.pregon figure img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  display: block;
+}
+
+.pregon figcaption {
+  font-size: var(--t-14);
+  margin-top: var(--s-2);
+}
+
 .pregon .meta {
   font-size: var(--t-14);
   margin: var(--s-4) 0 0;
