@@ -7,7 +7,7 @@ export const metadata = { title: "Agenda" };
 export const revalidate = 120;
 
 export default async function Agenda() {
-  const { eventos, error, usandoSemilla } = await cargarAgenda();
+  const { eventos, usandoSemilla } = await cargarAgenda();
 
   return (
     <SitioShell seccionActiva="agenda">
@@ -15,15 +15,10 @@ export default async function Agenda() {
         <div className="doc bloque">
           <h1>Agenda</h1>
           <p>Fechas del pueblo. La comunidad y el equipo las cargan desde el CMS.</p>
-          {error ? (
-            <p className="error" role="alert">
-              {error}
-            </p>
-          ) : null}
           {usandoSemilla && eventos.length > 0 ? (
             <p className="aviso">Fecha sembrada en el código mientras la agenda no se escribe en la base.</p>
           ) : null}
-          {eventos.length === 0 && !error ? (
+          {eventos.length === 0 ? (
             <div className="vacio">
               <h2>Aún no hay fechas</h2>
               <p>Cuando haya tres o cinco, aparecen aquí por mes.</p>

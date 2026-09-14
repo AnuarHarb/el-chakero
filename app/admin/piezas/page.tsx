@@ -45,7 +45,7 @@ export default async function Piezas() {
     consulta = consulta.eq("autor_id", userId);
   }
 
-  const { data, error } = await consulta;
+  const { data } = await consulta;
   const piezas = (data ?? []) as unknown as PiezaLista[];
   const verSala = veTodasLasNoPublicas(rol);
 
@@ -58,17 +58,11 @@ export default async function Piezas() {
         título, entradilla, foto, pie; y si es noticia, audio con duración. El
         estado no se cambia a mano.
       </p>
-      {error ? (
-        <p className="error" role="alert">
-          No se pudieron cargar las piezas.
-        </p>
-      ) : (
-        <ListaPiezas
-          piezas={piezas}
-          titulo={verSala ? "En la sala" : "Tus piezas"}
-          mostrarAutor={verSala}
-        />
-      )}
+      <ListaPiezas
+        piezas={piezas}
+        titulo={verSala ? "En la sala" : "Tus piezas"}
+        mostrarAutor={verSala}
+      />
       <section aria-labelledby="nueva-pieza">
         <h2 id="nueva-pieza">Nueva pieza</h2>
         <FormularioPieza userId={userId} rol={rol} />

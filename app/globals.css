@@ -521,7 +521,7 @@ textarea:focus-visible {
 }
 
 .bloque {
-  padding: var(--s-8) 0;
+  padding-block: var(--s-8);
 }
 
 .vacio {
@@ -775,6 +775,10 @@ textarea:focus-visible {
 .aviso {
   font-size: var(--t-14);
   color: var(--humo);
+}
+
+.articulo {
+  padding-inline: var(--s-8);
 }
 
 .articulo h1 {
