@@ -5,7 +5,8 @@ import type { EventoAgenda, PiezaPublica } from "./supabase/tipos";
  * Piezas en código cuando la base no tiene publicadas.
  * Mismo shape que una `pieza` publicada.
  * Fotos en `public/semilla/`: Wikimedia Commons (recorte 3:2), salvo la sala
- * de cómputo y la del Festival de Tambores, que son del acto. Créditos en pie_foto.
+ * de cómputo, el Festival de Tambores, el retrato de Torres y el homenaje a
+ * Kid Pambelé, que son del acto o de la figura. Créditos en pie_foto.
  */
 const AUTOR = { nombre: "Redacción El Chakero" };
 
@@ -54,7 +55,9 @@ También hay una charla. No vamos a inventar la hora ni quién habla: eso no nos
 
 La donación entra en el programa Kuagro Tech, con la Fundación Código Abierto. Lo que sigue no es solo estrenar máquinas: van a haber actividades para que los muchachos aprendan a programar y a usar inteligencia artificial. Eso es lo que hay. Ni lista de talleres ni cupos. El dato es el programa y con quién va.
 
-La foto es de la sala ese martes, con el listón todavía puesto. Retrato de Torres no hay con licencia.`,
+En agosto, muchachos de esa misma escuela se fueron al Tech Caribe Show, en Barranquilla. Educación tiene esa pieza.
+
+La foto es de la sala ese martes, con el listón todavía puesto. El retrato de Torres está en Gente.`,
     transparencia:
       "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. La sala es el arranque de ORICA, centro de innovación tecnológica impulsado por Torres, con el fin de que el Caribe sea epicentro tecnológico y Palenque territorio tecnológico. No hay otra fecha, ni presupuesto, ni lista de invitados. Torres ocupó la curul afro que dejó Monsalve en los días que faltaban del periodo. La foto es de la sala ese día.",
     fuentes: [
@@ -65,6 +68,10 @@ La foto es de la sala ese martes, con el listón todavía puesto. Retrato de Tor
       {
         texto: "ORICA: la sala es el arranque, no el cierre (Educación)",
         url: "/educacion/orica-centro-innovacion-palenque/",
+      },
+      {
+        texto: "El Chakero — muchachos de Benkos Biohó en el Tech Caribe Show (Educación)",
+        url: "/educacion/muchachos-palenque-tech-caribe-show/",
       },
     ],
   }),
@@ -99,6 +106,75 @@ La inauguración que sí hay es la de la sala: 25 portátiles, UPS y reguladores
       {
         texto: "El Chakero — perfil de Pedro Adán Torres (Gente)",
         url: "/gente/pedro-adan-torres-sala-sistemas/",
+      },
+      {
+        texto: "El Chakero — muchachos de Benkos Biohó en el Tech Caribe Show (Educación)",
+        url: "/educacion/muchachos-palenque-tech-caribe-show/",
+      },
+    ],
+  }),
+  pieza({
+    id: "a1e1c001-0013-4000-8000-000000000013",
+    slug: "muchachos-palenque-tech-caribe-show",
+    titulo: "Muchachos de Benkos Biohó se fueron al Tech Caribe Show",
+    seccion: "educacion",
+    formato: "noticia",
+    fecha_publicacion: "2026-08-08T16:00:00-05:00",
+    foto_url: "/semilla/calle-palenque-2007.jpg",
+    pie_foto:
+      "Patio de una escuela en San Basilio de Palenque, 1 de diciembre de 2007. Foto: Kosmel Bonfante / Wikimedia Commons (CC BY 3.0). Recorte 3:2. No es el Tech Caribe Show ni el viaje a Barranquilla.",
+    audio_url: null,
+    duracion: null,
+    entradilla:
+      "El 8 de agosto, estudiantes de la Benkos Biohó viajaron tres horas a Barranquilla al Tech Caribe Show. Lo organiza la Fundación Código Abierto. Es Kuagro Tech: aprender tecnología y ver el festival. No hay lista de nombres.",
+    cuerpo: `${LLAMADO_PREGON}: no se quedaron oyendo el show de lejos. Se fueron.
+
+El 8 de agosto de 2026 el Tech Caribe Show se hizo en el Teatro José Consuegra Higgins, en Barranquilla. Lo organiza la Fundación Código Abierto. Vive La Noticia lo contó antes y lo volvió a contar ese mismo sábado: tercera edición del Fest, un show de tecnología —no una conferencia fría—, y en las butacas, muchachos de Palenque.
+
+La escuela es la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Vive La Noticia, el 30 de julio, avisó 40 estudiantes y tres horas de carretera. La página del fest, después del acto, habló de 40 estudiantes y 5 docentes. El Chakero no arma censo propio. El dato es ese grupo, de esa escuela, en ese teatro.
+
+No iban de paseo, escribió Vive La Noticia: jornada de formación en inteligencia artificial, programación y trabajo global. El fest lo mete en Kuagro Tech, primera fase: el nombre del kuagro, la forma de organizarse aquí, en grupos que se acompañan. Lo que sigue, dijeron, es la sala de tecnología. Educación ya tiene esa inauguración, el 15 de septiembre.
+
+Grace Torres, directora de la Fundación Código Abierto, citada por Vive La Noticia: «El sueño de un Caribe convertido en epicentro tech solo tiene sentido si incluye a los jóvenes de toda la costa, desde las capitales hasta los territorios. Ver a los muchachos de Palenque en ese teatro es la misión hecha realidad».
+
+El 8 de agosto, ya pasado el acto, Vive La Noticia confirmó que los 40 jóvenes de Palenque estuvieron y que recibieron formación. También escribió que en el evento anunciaron una dotación de computadores para una institución de Palenque. Aquí no se mezcla esa frase con un laboratorio que no vimos. La sala de cómputo, con fecha y máquinas, está en la otra pieza.
+
+Cartelera completa, hora de cada bloque, quién se sentó en qué silla: no. Si la escuela o la Fundación mandan nombres de los muchachos, se publican.`,
+    cita: {
+      texto:
+        "El sueño de un Caribe convertido en epicentro tech solo tiene sentido si incluye a los jóvenes de toda la costa, desde las capitales hasta los territorios. Ver a los muchachos de Palenque en ese teatro es la misión hecha realidad.",
+      fuente: "Grace Torres, Fundación Código Abierto, citada por Vive La Noticia, 30 de julio de 2026",
+    },
+    transparencia:
+      "Pieza de semilla. El viaje, la escuela, las 40 personas y el teatro salen de Vive La Noticia (30 jul y 8 ago 2026) y de la página del TechCaribe Fest. Los 5 docentes los nombra el fest, no un conteo de esta redacción. No se toma el aforo total del teatro: esos números no coinciden entre el aviso y el recuento. Foto de archivo, no del viaje.",
+    fuentes: [
+      {
+        texto: "Vive La Noticia, 30 jul 2026 — aviso: 40 estudiantes de Palenque al Fest",
+        url: "https://vivelanoticia.com/2026/07/30/llega-techcaribe-fest-el-festival-de-tecnologia-mas-importante-de-la-costa-40-jovenes-de-palenque-viajaran-tres-horas-para-vivir-la-experiencia/",
+      },
+      {
+        texto: "Vive La Noticia, 8 ago 2026 — los 40 jóvenes de Palenque estuvieron en el Show",
+        url: "https://vivelanoticia.com/2026/08/08/barranquilla-se-consolida-como-epicentro-tecnologico-del-caribe-con-la-tercera-edicion-de-tech-caribe-show/",
+      },
+      {
+        texto: "TechCaribe Fest — 40 estudiantes y 5 docentes de Benkos Biohó, Kuagro Tech",
+        url: "https://www.techcaribe.co/fest",
+      },
+      {
+        texto: "Fundación Código Abierto — ficha del Tech Caribe, 8 ago 2026",
+        url: "https://www.codigoabierto.tech/eventos/tech-caribe",
+      },
+      {
+        texto: "El Chakero — inauguración de la sala, 15 sep 2026 (Educación)",
+        url: "/educacion/kuagro-tech-inauguran-sala-computo/",
+      },
+      {
+        texto: "El Chakero — ORICA, el centro que arranca con esa sala (Educación)",
+        url: "/educacion/orica-centro-innovacion-palenque/",
+      },
+      {
+        texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:San_basilio_de_palenque_-_panoramio_(2).jpg",
       },
     ],
   }),
@@ -305,6 +381,8 @@ La personería jurídica es la 4033 de 2022. Torres dijo en esa convención que 
 
 Eso es poner la cara. Un partido que se declara del pueblo, con personería entregada en la plaza de Benkos, y que en 2026 volvió a convocar aquí. En junio, El Universal y Diario La Libertad escribieron que el partido había mantenido la personería en las legislativas y que tenía un senador y tres representantes: verse en el país. Lo que se gana allá, si sirve, se vuelve. El ejemplo está en Educación: la sala de cómputo —arranque de ORICA—, con el sueldo de la curul afro que Torres ocupó los días que faltaban.
 
+En esa misma temporada de julio, el Congreso —por iniciativa de Torres, todavía en la curul— condecoró a Kid Pambelé. En Palenque, en esa convención, el pueblo también lo honró. Cultura tiene esa pieza.
+
 En la convención Torres también dijo cifras de 2023 —87 alcaldes, 198 concejales—. Eso lo dijo él. Aquí no hay escrutinio propio. Si el acta o el padrón dicen otra cosa, el canal está abierto.`,
     cita: {
       texto:
@@ -343,8 +421,91 @@ En la convención Torres también dijo cifras de 2023 —87 alcaldes, 198 concej
         url: "/educacion/orica-centro-innovacion-palenque/",
       },
       {
+        texto: "El Chakero — homenaje a Kid Pambelé en el Congreso y en Palenque (Cultura)",
+        url: "/cultura/homenaje-kid-pambele-congreso-y-palenque/",
+      },
+      {
         texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:San_basilio_de_palenque_-_panoramio_(1).jpg",
+      },
+    ],
+  }),
+  pieza({
+    id: "a1e1c001-0012-4000-8000-000000000012",
+    slug: "homenaje-kid-pambele-congreso-y-palenque",
+    titulo: "Kid Pambelé: el Congreso lo condecoró y Palenque lo volvió a honrar",
+    seccion: "cultura",
+    formato: "noticia",
+    fecha_publicacion: "2026-07-29T14:00:00-05:00",
+    foto_url: "/semilla/homenaje-kid-pambele.jpg",
+    pie_foto:
+      "Homenaje a Kid Pambelé: Pedro Adán Torres entrega la Orden de la Democracia Simón Bolívar – Gran Cruz Caballero a Antonio Cervantes Reyes, en el Congreso.",
+    audio_url: null,
+    duracion: null,
+    entradilla:
+      "Antonio Cervantes Reyes, Kid Pambelé, palenquero, primer campeón mundial de boxeo de Colombia. En julio el Congreso le impuso la Orden de la Democracia Simón Bolívar – Gran Cruz Caballero, por iniciativa de Pedro Adán Torres. En Palenque, en la Convención del Partido Demócrata Colombiano, el pueblo también lo honró.",
+    cuerpo: `${LLAMADO_PREGON}: el campeón no se quedó en el Capitolio.
+
+Antonio Cervantes Reyes —Kid Pambelé— es de aquí. El Universal dató el nacimiento el 23 de diciembre de 1945, en San Basilio de Palenque. El 28 de octubre de 1972, dice esa misma casa, ganó por nocaut en el décimo asalto al panameño Alfonso «Peppermint» Frazer y se quedó con el título mundial de los wélter júnior: el primer cinturón mundial de boxeo de Colombia. El palenquero fue campeón en dos periodos; en 1998, según ese medio, entró al Salón Internacional de la Fama del Boxeo. Aquí no se inventa un combate.
+
+En julio de 2026 el Congreso lo condecoró. El Universal anunció el homenaje para el lunes 20, día de la instalación del nuevo Congreso. El Bolivarense lo dató el viernes 17. El Heraldo y Diario La Libertad lo publicaron el 20. Semana escribió que fue pocos días antes de que cerrara esa legislatura. El Chakero no va a pelear el día. El dato es este: Salón Boyacá del Capitolio. Orden de la Democracia Simón Bolívar – Gran Cruz Caballero, una de las distinciones altas de la Cámara. La impuso Pedro Adán Torres Pérez, palenquero, entonces representante por la circunscripción especial afrodescendiente, presidente del Partido Demócrata Colombiano.
+
+Torres, según El Heraldo: «Su historia, nacida en San Basilio de Palenque, inspiró a generaciones de colombianos y abrió el camino para que el talento de muchos jóvenes encontrara nuevas oportunidades en el deporte». Y, en varios medios, esta otra: «Kid Pambelé no solo conquistó títulos mundiales; conquistó el respeto y la admiración de todo un país. Su ejemplo demuestra que el talento, la disciplina y la perseverancia pueden romper cualquier barrera. Hoy el Congreso de la República honra a un campeón que pertenece para siempre a la historia de Colombia».
+
+En el mismo acto, dicen Caracol, El Universal y Diario La Libertad, también condecoraron a Johana Ximena Aranda Rivera, alcaldesa de Ibagué; a Francisco Hernández, primer árbitro internacional de boxeo oriundo de Palenque; y a José Alfredo Herazo, por el trabajo con las comunidades negras, afrocolombianas, raizales y palenqueras. Discursos de ellos no hay aquí.
+
+El Universal recuerda que no era la primera vez en el Capitolio: en octubre de 2022, al cumplirse 50 años de la primera corona, lo condecoraron en el Salón Elíptico.
+
+Ese homenaje no se quedó en Bogotá. En Palenque, en la Convención Nacional del Partido Demócrata Colombiano —la que Vive La Noticia dató el 29 de julio—, también se le rindió homenaje a Cervantes. Lo que publicaron los otros es el Capitolio. Aquí el dato de la redacción es el segundo acto: el pueblo. No hay hora, ni lista de oradores, ni presupuesto. Si alguien de esa sala manda el aviso fino, se completa.
+
+La foto es del homenaje en el Congreso: Torres entrega la orden, Pambelé la recibe. Fotógrafo no se nombra. Gente tiene a Torres. Comunidad tiene la Convención.`,
+    cita: {
+      texto:
+        "Kid Pambelé no solo conquistó títulos mundiales; conquistó el respeto y la admiración de todo un país. Su ejemplo demuestra que el talento, la disciplina y la perseverancia pueden romper cualquier barrera. Hoy el Congreso de la República honra a un campeón que pertenece para siempre a la historia de Colombia.",
+      fuente: "Pedro Adán Torres Pérez, homenaje en el Congreso, julio de 2026, citado por El Universal, Diario La Libertad y El Heraldo",
+    },
+    transparencia:
+      "Pieza de semilla. El acto del Congreso sale de El Universal, Diario La Libertad, El Heraldo, Caracol, El Bolivarense y Semana. El día exacto no coincide entre esos medios: aquí no se elige uno. La ficha de Pambelé (nacimiento, 1972, dos periodos, Salón de la Fama, 2022) sale de El Universal. El homenaje en Palenque, durante la Convención del partido, es dato de la redacción; Vive La Noticia cubrió esa convención el 29 de julio y no publicó ese homenaje. Foto del acto en el Congreso. No hay presupuesto ni lista de oradores del pueblo.",
+    fuentes: [
+      {
+        texto: "El Universal, 17 jul 2026 — anuncio del homenaje y ficha de Pambelé",
+        url: "https://www.eluniversal.com.co/deportes/2026/07/17/el-congreso-rendira-tributo-a-la-leyenda-del-boxeo-kid-pambele/",
+      },
+      {
+        texto: "El Universal, 19 jul 2026 — la orden en el Salón Boyacá",
+        url: "https://www.eluniversal.com.co/deportes/2026/07/18/kid-pambele-recibio-la-orden-de-la-democracia-simon-bolivar-gran-cruz-caballero/",
+      },
+      {
+        texto: "Diario La Libertad, 20 jul 2026 — Torres entrega el reconocimiento",
+        url: "https://diariolalibertad.com/2026/07/20/pedro-adan-torres-entrega-reconocimiento-a-kid-pambele-en-el-congreso-de-la-republica/",
+      },
+      {
+        texto: "El Heraldo, 20 jul 2026 — citas de Torres y los otros condecorados",
+        url: "https://www.elheraldo.co/politica/2026/07/20/kid-pambele-es-reconocido-con-gran-cruz-caballero-del-congreso-de-la-republica-por-su-trayectoria-y-legado/",
+      },
+      {
+        texto: "Caracol Radio, 21 jul 2026 — Salón Boyacá y la orden",
+        url: "https://caracol.com.co/2026/07/21/congreso-condecora-a-kid-pambele-con-la-orden-de-la-democracia-simon-bolivar/",
+      },
+      {
+        texto: "El Bolivarense, 18 jul 2026 — dató la ceremonia el viernes 17",
+        url: "https://bolivarense.com/honor-al-campeon-congreso-condecora-a-kid-pambele-por-iniciativa-del-representante-a-la-camara-pedro-adan-torres/",
+      },
+      {
+        texto: "Semana, 24 jul 2026 — el homenaje, pocos días antes de cerrar esa legislatura",
+        url: "https://www.semana.com/confidenciales/articulo/la-condecoracion-que-le-hizo-el-congreso-a-kid-pambele/202625/",
+      },
+      {
+        texto: "Vive La Noticia, 29 jul 2026 — Convención Nacional en Palenque",
+        url: "https://vivelanoticia.com/2026/07/29/pedro-adan-torres-reivindica-el-origen-palenquero-del-partido-democrata-colombiano-durante-la-convencion-nacional/",
+      },
+      {
+        texto: "El Chakero — Convención del partido en Palenque (Comunidad)",
+        url: "/comunidad/partido-democrata-nacio-en-palenque/",
+      },
+      {
+        texto: "El Chakero — perfil de Pedro Adán Torres (Gente)",
+        url: "/gente/pedro-adan-torres-sala-sistemas/",
       },
     ],
   }),
@@ -397,9 +558,8 @@ El Chakero no hace ficha de cineasta. Si ATPQ o la Corporación del Festival de 
     seccion: "territorio",
     formato: "noticia",
     fecha_publicacion: "2026-09-15T10:00:00-05:00",
-    foto_url: "/semilla/pueblo-palenque-2007.jpg",
-    pie_foto:
-      "Arroyo en San Basilio de Palenque, 1 de diciembre de 2007. Foto: Kosmel Bonfante / Wikimedia Commons (CC BY 3.0). Recorte 3:2. No es un acto del Partido Demócrata Colombiano.",
+    foto_url: "/semilla/pedro-adan-torres.jpg",
+    pie_foto: "Pedro Adán Torres.",
     audio_url: null,
     duracion: null,
     entradilla:
@@ -414,7 +574,7 @@ Lo que se gana afuera, si sirve, se vuelve. El ejemplo no es un discurso: es la 
 
 La Convención de julio, en Palenque, es la otra pata: el partido dijo que nació aquí y que no se ha ido. Comunidad tiene esa sala. Aquí el dato es el trato con el territorio: cara afuera, plata y máquinas adentro. Si el partido o la escuela dicen que el dibujo es otro, el canal está abierto.`,
     transparencia:
-      "Pieza de semilla. La bancada (un senador y tres representantes) es la que publicaron El Universal y Diario La Libertad en junio de 2026, no un conteo de esta redacción. La curul afro y el cierre del 20 de julio salen de la ficha de Monsalve y de Poder Legislativo; Torres la ocupó por reemplazo, según El Universal. Foto de archivo.",
+      "Pieza de semilla. La bancada (un senador y tres representantes) es la que publicaron El Universal y Diario La Libertad en junio de 2026, no un conteo de esta redacción. La curul afro y el cierre del 20 de julio salen de la ficha de Monsalve y de Poder Legislativo; Torres la ocupó por reemplazo, según El Universal. Foto: retrato de Pedro Adán Torres.",
     fuentes: [
       {
         texto: "El Universal, 19 jun 2026 — periodo que faltaba, sueldo y bancada",
@@ -444,10 +604,6 @@ La Convención de julio, en Palenque, es la otra pata: el partido dijo que naci�
         texto: "El Chakero — ORICA, el centro que arranca con la sala (Educación)",
         url: "/educacion/orica-centro-innovacion-palenque/",
       },
-      {
-        texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:San_basilio_de_palenque_-_panoramio_(3).jpg",
-      },
     ],
   }),
   pieza({
@@ -457,9 +613,8 @@ La Convención de julio, en Palenque, es la otra pata: el partido dijo que naci�
     seccion: "gente",
     formato: "perfil",
     fecha_publicacion: "2026-09-15T16:00:00-05:00",
-    foto_url: "/semilla/estatua-benkos-wehwalt.jpg",
-    pie_foto:
-      "Pedestal de Benkos Biohó en la plaza de Palenque, 5 de febrero de 2009. Foto: Wehwalt / Wikimedia Commons (CC BY-SA 3.0). Recorte 3:2. No es retrato de Torres ni la sala de cómputo.",
+    foto_url: "/semilla/pedro-adan-torres.jpg",
+    pie_foto: "Pedro Adán Torres.",
     audio_url: null,
     duracion: null,
     entradilla:
@@ -474,14 +629,16 @@ Ese mismo junio puso el sueldo sobre la mesa: el 100 % del salario de representa
 
 Ahí está el ángulo. El partido pone la cara por Palenque. Se ve en Colombia. Y lo que se gana afuera se vuelve al territorio. La sala —inaugurada el 15 de septiembre del 2026, 25 portátiles, UPS, reguladores, Kuagro Tech— no es un regalo suelto: es el arranque de ORICA, el centro de innovación tecnológica, con la Fundación Código Abierto. El apuntar: Caribe como epicentro de tecnología, Palenque como territorio tecnológico. El detalle de ORICA está en Educación.
 
-En julio, ya fuera de la curul, el partido hizo Convención Nacional en Palenque. Dijo que nació aquí y que no se ha ido. El detalle está en Comunidad. El de la sala, en Educación.
+En julio, todavía en la curul, impulsó el homenaje del Congreso a Kid Pambelé. Ya fuera de esa curul, el partido hizo Convención Nacional en Palenque: el pueblo también honró a Cervantes, y el partido dijo que nació aquí y que no se ha ido. Cultura tiene a Pambelé. Comunidad tiene la Convención. El de la sala, en Educación.
 
-No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Biohó, el nombre de la escuela.`,
+La foto es él.`,
     cita: {
       texto:
         "San Basilio de Palenque le ha entregado mucho a Colombia, historia, libertad, resistencia y patrimonio cultural. Hoy quiero devolverle a mi tierra una pequeña parte de todo lo que me ha dado.",
       fuente: "Pedro Adán Torres Pérez, citado por El Universal y El Afro Bogotano, junio de 2026",
     },
+    transparencia:
+      "Pieza de semilla. La curul afro, el sueldo y las citas salen de El Universal, Diario La Libertad, El Afro Bogotano y Noticias y Respuestas. El cierre del 20 de julio, de Poder Legislativo. Foto: retrato de Pedro Adán Torres.",
     fuentes: [
       {
         texto: "El Chakero — el partido pone la cara de Palenque (Comunidad)",
@@ -498,6 +655,10 @@ No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Bi
       {
         texto: "El Chakero — ORICA, el centro que arranca con esa sala (Educación)",
         url: "/educacion/orica-centro-innovacion-palenque/",
+      },
+      {
+        texto: "El Chakero — homenaje a Kid Pambelé en el Congreso y en Palenque (Cultura)",
+        url: "/cultura/homenaje-kid-pambele-congreso-y-palenque/",
       },
       {
         texto: "El Universal, 19 jun 2026 — curul, sueldo y periodo que faltaba",
@@ -526,10 +687,6 @@ No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Bi
       {
         texto: "Lengua ri Palenge Gente (ICESI) — moná: hijo/a",
         url: "https://www.icesi.edu.co/papeldecolgadura/images/pdc/vol15/PDC_15_17.pdf",
-      },
-      {
-        texto: "Foto: Wehwalt, CC BY-SA 3.0 — Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Palenque1.jpg",
       },
     ],
   }),

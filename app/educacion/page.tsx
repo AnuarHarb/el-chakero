@@ -7,7 +7,7 @@ export default function Educacion() {
   return (
     <ListadoSeccion
       seccion="educacion"
-      queHay="Las escuelas, la sala de cómputo, ORICA, becas, egresados, docentes."
+      queHay="Las escuelas, la sala de cómputo, ORICA, el Tech Caribe Show, becas, egresados, docentes."
     />
   );
 }
