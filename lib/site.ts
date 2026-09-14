@@ -2,9 +2,46 @@ export const NOMBRE = "El Chakero";
 
 export const DOMINIO = "elchakero.com";
 
-export const CANAL_WHATSAPP =
-  process.env.NEXT_PUBLIC_WHATSAPP_CHANNEL ??
+/** Canal oficial. Si Vercel deja NEXT_PUBLIC_WHATSAPP_CHANNEL vacío, esto es el href. */
+export const CANAL_WHATSAPP_RESPALDO =
   "https://whatsapp.com/channel/0029Vb8FvlmLI8YeFZWwIs23";
+
+const ID_CANAL_WHATSAPP = /^[0-9A-Za-z]{18,32}$/;
+
+export function urlCanalWhatsApp(
+  valor: string | undefined,
+  respaldo = CANAL_WHATSAPP_RESPALDO,
+): string {
+  const crudo = valor?.trim();
+  if (!crudo || crudo === "#") return respaldo;
+
+  if (ID_CANAL_WHATSAPP.test(crudo)) {
+    return `https://whatsapp.com/channel/${crudo}`;
+  }
+
+  for (const candidato of [crudo, `https://${crudo}`]) {
+    try {
+      const url = new URL(candidato);
+      if (url.protocol !== "http:" && url.protocol !== "https:") continue;
+      const host = url.hostname.replace(/^www\./i, "").toLowerCase();
+      if (host !== "whatsapp.com") continue;
+      const partes = url.pathname.split("/").filter(Boolean);
+      if (partes[0] !== "channel") continue;
+      const id = partes[1];
+      if (!id || id === "..." || !ID_CANAL_WHATSAPP.test(id)) continue;
+      return `https://whatsapp.com/channel/${id}`;
+    } catch {
+      // hostname sin protocolo, placeholder, o valor que no es URL
+    }
+  }
+
+  return respaldo;
+}
+
+// En Vercel, NEXT_PUBLIC_WHATSAPP_CHANNEL a veces llega como "" y `??` no aplica.
+export const CANAL_WHATSAPP = urlCanalWhatsApp(
+  process.env.NEXT_PUBLIC_WHATSAPP_CHANNEL,
+);
 
 export const CORREO_NOTICIAS = "noticias@elchakero.com";
 

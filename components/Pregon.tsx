@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { fechaCorta } from "@/lib/fecha";
-import { CANAL_WHATSAPP, LLAMADO_PREGON } from "@/lib/site";
+import { EnlaceCanal } from "@/components/EnlaceCanal";
+import { LLAMADO_PREGON } from "@/lib/site";
 import type { PiezaPublica } from "@/lib/supabase/tipos";
 import { nombreSeccion } from "./EtiquetaSeccion";
 
@@ -24,9 +25,7 @@ export function Pregon({ pieza }: Props) {
           En esta web queda el archivo y la pieza del día.
         </p>
         <p className="meta">
-          <a href={CANAL_WHATSAPP} rel="noreferrer">
-            Oírlo en el canal
-          </a>
+          <EnlaceCanal>Oírlo en el canal</EnlaceCanal>
         </p>
       </section>
     );

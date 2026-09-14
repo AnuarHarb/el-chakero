@@ -1,5 +1,6 @@
+import { EnlaceCanal } from "@/components/EnlaceCanal";
 import { PaginaFija } from "@/components/PaginaFija";
-import { CANAL_WHATSAPP, CORREO_NOTICIAS, LLAMADO_PREGON } from "@/lib/site";
+import { CORREO_NOTICIAS, LLAMADO_PREGON } from "@/lib/site";
 
 export const metadata = {
   title: "Quiénes somos",
@@ -35,9 +36,7 @@ export default function QuienesSomos() {
         Para escribirnos:{" "}
         <a href={`mailto:${CORREO_NOTICIAS}`}>{CORREO_NOTICIAS}</a>. Para oír el
         pregón:{" "}
-        <a href={CANAL_WHATSAPP} rel="noreferrer">
-          el canal de WhatsApp
-        </a>
+        <EnlaceCanal>el canal de WhatsApp</EnlaceCanal>
         .
       </p>
     </PaginaFija>

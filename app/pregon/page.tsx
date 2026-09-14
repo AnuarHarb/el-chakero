@@ -1,9 +1,10 @@
 import { BloqueAudio } from "@/components/BloqueAudio";
+import { EnlaceCanal } from "@/components/EnlaceCanal";
 import { LlamadoWhatsApp } from "@/components/LlamadoWhatsApp";
 import { SitioShell } from "@/components/SitioShell";
 import { cargarPregones } from "@/lib/contenido";
 import { fechaCorta } from "@/lib/fecha";
-import { CANAL_WHATSAPP, LLAMADO_PREGON } from "@/lib/site";
+import { LLAMADO_PREGON } from "@/lib/site";
 
 export const metadata = { title: "Pregón" };
 export const revalidate = 120;
@@ -26,9 +27,7 @@ export default async function PregonArchivo() {
               <h2>No hay audios en el archivo</h2>
               <p>
                 El pregón se oye primero en el canal.{" "}
-                <a href={CANAL_WHATSAPP} rel="noreferrer">
-                  Unirse al canal
-                </a>
+                <EnlaceCanal>Unirse al canal</EnlaceCanal>
                 .
               </p>
             </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { EnlaceCanal } from "@/components/EnlaceCanal";
 import { PaginaFija } from "@/components/PaginaFija";
-import { CANAL_WHATSAPP, CORREO_NOTICIAS } from "@/lib/site";
+import { CORREO_NOTICIAS } from "@/lib/site";
 
 export const metadata = {
   title: "Cómo funcionan las noticias",
@@ -77,9 +78,7 @@ export default function ComoFuncionan() {
         <h2>Cómo mandar un dato</h2>
         <p>
           Por el{" "}
-          <a href={CANAL_WHATSAPP} rel="noreferrer">
-            canal de WhatsApp
-          </a>{" "}
+          <EnlaceCanal>canal de WhatsApp</EnlaceCanal>{" "}
           o en <Link href="/envia-tu-noticia/">Envía tu noticia</Link>. El equipo
           verifica. No prometemos publicar todo lo que llega.
         </p>

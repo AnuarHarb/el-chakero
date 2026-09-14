@@ -1,5 +1,6 @@
+import { EnlaceCanal } from "@/components/EnlaceCanal";
 import { PaginaFija } from "@/components/PaginaFija";
-import { CANAL_WHATSAPP, CORREO_NOTICIAS } from "@/lib/site";
+import { CORREO_NOTICIAS } from "@/lib/site";
 
 export const metadata = {
   title: "Datos y privacidad",
@@ -52,9 +53,7 @@ export default function DatosYPrivacidad() {
         <h3>Canal de WhatsApp</h3>
         <p>
           El pregón diario se oye en el{" "}
-          <a href={CANAL_WHATSAPP} rel="noreferrer">
-            canal de WhatsApp de El Chakero
-          </a>
+          <EnlaceCanal>canal de WhatsApp de El Chakero</EnlaceCanal>
           . Quien se une al canal lo hace en la plataforma de Meta. El Chakero
           no recibe, por esta web, la lista de seguidores del canal. Si alguien
           escribe un dato por ahí, WhatsApp trata esa conversación según sus
