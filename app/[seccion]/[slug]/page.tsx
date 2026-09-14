@@ -1,16 +1,25 @@
 import { notFound } from "next/navigation";
 import { BloqueAudio } from "@/components/BloqueAudio";
+import { Cita } from "@/components/Cita";
 import { EtiquetaSeccion, nombreSeccion } from "@/components/EtiquetaSeccion";
 import { LlamadoWhatsApp } from "@/components/LlamadoWhatsApp";
 import { SitioShell } from "@/components/SitioShell";
 import { cargarPieza } from "@/lib/contenido";
 import { fechaCorta } from "@/lib/fecha";
+import { SEMILLA_PIEZAS } from "@/lib/semilla";
 import { esSeccion } from "@/lib/site";
 import type { Metadata } from "next";
 
 type Props = {
   params: Promise<{ seccion: string; slug: string }>;
 };
+
+export async function generateStaticParams() {
+  return SEMILLA_PIEZAS.filter((pieza) => pieza.slug).map((pieza) => ({
+    seccion: pieza.seccion,
+    slug: pieza.slug as string,
+  }));
+}
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { seccion, slug } = await params;
@@ -56,6 +65,11 @@ export default async function Articulo({ params }: Props) {
             {pieza.fecha_publicacion ? ` · ${fechaCorta(pieza.fecha_publicacion)}` : ""}
             {pieza.duracion ? ` · Escúchalo en ${pieza.duracion}` : ""}
           </p>
+          {pieza.semilla ? (
+            <p className="aviso">
+              Semilla en el código, no publicada por el CMS. Fuentes al pie.
+            </p>
+          ) : null}
           {pieza.estado === "retirada" ? (
             <p className="error" role="status">
               Esta pieza fue retirada
@@ -65,6 +79,7 @@ export default async function Articulo({ params }: Props) {
           {pieza.audio_url ? (
             <BloqueAudio src={pieza.audio_url} duracion={pieza.duracion} />
           ) : null}
+          {pieza.cita ? <Cita texto={pieza.cita.texto} fuente={pieza.cita.fuente} /> : null}
           {pieza.cuerpo
             ? pieza.cuerpo.split(/\n\n+/).map((parrafo, indice) => (
                 <p key={indice}>{parrafo}</p>
@@ -72,6 +87,20 @@ export default async function Articulo({ params }: Props) {
             : null}
           {pieza.transparencia ? (
             <p className="aviso">Transparencia: {pieza.transparencia}</p>
+          ) : null}
+          {pieza.fuentes && pieza.fuentes.length > 0 ? (
+            <footer className="fuentes">
+              <h2>De dónde salió</h2>
+              <ul>
+                {pieza.fuentes.map((fuente) => (
+                  <li key={fuente.url}>
+                    <a href={fuente.url} rel="noopener noreferrer">
+                      {fuente.texto}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </footer>
           ) : null}
         </article>
         <LlamadoWhatsApp />

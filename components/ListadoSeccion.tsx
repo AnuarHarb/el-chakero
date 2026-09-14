@@ -11,7 +11,7 @@ type Props = {
 };
 
 export async function ListadoSeccion({ seccion, queHay }: Props) {
-  const { piezas, error } = await cargarPiezasDeSeccion(seccion);
+  const { piezas, error, usandoSemilla } = await cargarPiezasDeSeccion(seccion);
   const titulo = nombreSeccion(seccion);
 
   return (
@@ -24,6 +24,9 @@ export async function ListadoSeccion({ seccion, queHay }: Props) {
             <p className="error" role="alert">
               {error}
             </p>
+          ) : null}
+          {usandoSemilla && piezas.length > 0 ? (
+            <p className="aviso">Semilla en el código. Cuando haya piezas en la base, salen aquí.</p>
           ) : null}
           {piezas.length === 0 && !error ? (
             <div className="vacio">

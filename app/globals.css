@@ -692,3 +692,25 @@ input:focus-visible {
   color: var(--humo);
   margin-bottom: var(--s-6);
 }
+
+.fuentes {
+  margin-top: var(--s-8);
+  padding-top: var(--s-4);
+  border-top: 2px solid var(--ceniza);
+  max-width: var(--medida);
+}
+
+.fuentes h2 {
+  font-size: var(--t-21);
+  font-variation-settings: "opsz" 24;
+  margin-bottom: var(--s-3);
+}
+
+.fuentes ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.fuentes li {
+  margin-bottom: var(--s-2);
+}

@@ -41,6 +41,11 @@ export type Perfil = {
   creado_en: string;
 };
 
+export type FuentePublica = {
+  texto: string;
+  url: string;
+};
+
 export type PiezaPublica = {
   id: string;
   slug: string | null;
@@ -58,6 +63,10 @@ export type PiezaPublica = {
   estado: EstadoPieza;
   motivo_retiro: string | null;
   autor: { nombre: string } | null;
+  /** Solo semilla en código. La tabla `piezas` no tiene estas columnas. */
+  fuentes?: FuentePublica[] | null;
+  cita?: { texto: string; fuente?: string } | null;
+  semilla?: boolean;
 };
 
 export type EventoAgenda = {
