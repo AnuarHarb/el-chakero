@@ -79,6 +79,13 @@ export default async function Articulo({ params }: Props) {
           {pieza.audio_url ? (
             <BloqueAudio src={pieza.audio_url} duracion={pieza.duracion} />
           ) : null}
+          {pieza.foto_url ? (
+            <figure>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={pieza.foto_url} alt={pieza.pie_foto ?? pieza.titulo} />
+              {pieza.pie_foto ? <figcaption>{pieza.pie_foto}</figcaption> : null}
+            </figure>
+          ) : null}
           {pieza.cita ? <Cita texto={pieza.cita.texto} fuente={pieza.cita.fuente} /> : null}
           {pieza.cuerpo
             ? pieza.cuerpo.split(/\n\n+/).map((parrafo, indice) => (
