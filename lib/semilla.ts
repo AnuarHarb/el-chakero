@@ -4,8 +4,8 @@ import type { EventoAgenda, PiezaPublica } from "./supabase/tipos";
 /**
  * Piezas en código cuando la base no tiene publicadas.
  * Mismo shape que una `pieza` publicada.
- * Fotos en `public/semilla/`: Wikimedia Commons (recorte 3:2) salvo la de la
- * inauguración de la sala, que es del acto. Créditos en pie_foto.
+ * Fotos en `public/semilla/`: Wikimedia Commons (recorte 3:2), salvo la sala
+ * de cómputo y la del Festival de Tambores, que son del acto. Créditos en pie_foto.
  */
 const AUTOR = { nombre: "Redacción El Chakero" };
 
@@ -206,9 +206,9 @@ Si Yo Amo Palenque o alguien del proceso quiere pasar fechas, nombres y dónde s
     seccion: "cultura",
     formato: "noticia",
     fecha_publicacion: "2026-09-14T12:20:00-05:00",
-    foto_url: "/semilla/baile-palenque.jpg",
+    foto_url: "/semilla/festival-tambores.jpg",
     pie_foto:
-      "Baile y tambor en Palenque. Foto: Victoria Sánchez Mércol / Wikimedia Commons (CC BY-SA 3.0), publicada también en el blog Con los pies por la Tierra. Recorte 3:2. No es la edición 41 del festival.",
+      "Tambores en el Festival de Tambores y Expresiones Culturales, en Palenque.",
     audio_url: null,
     duracion: null,
     entradilla:
@@ -219,7 +219,9 @@ Lo organiza, como siempre, la Corporación Festival de Tambores de Palenque. El 
 
 No vamos a copiar la lista genérica de ritmos ni a vender el pueblo como destino. Tampoco vamos a decir quién cierra, ni qué taller hay el sábado, ni cuánto vale una posada. Eso no lo hemos visto publicado por la Corporación en estas semanas.
 
-Cuando la Corporación suelte la programación, aquí se cuenta con su nombre. Mientras tanto, la fecha queda en la agenda: 9 al 12 de octubre. El resto, cuando suene en el pueblo.`,
+Cuando la Corporación suelte la programación, aquí se cuenta con su nombre. Mientras tanto, la fecha queda en la agenda: 9 al 12 de octubre. El resto, cuando suene en el pueblo.
+
+La foto es del palco: tambores, no un afiche de calendario.`,
     fuentes: [
       {
         texto: "Cuándo Pasa — 41ª edición, 9 al 12 de octubre de 2026",
@@ -236,10 +238,6 @@ Cuando la Corporación suelte la programación, aquí se cuenta con su nombre. M
       {
         texto: "Corporación Festival de Tambores de Palenque (Facebook)",
         url: "https://www.facebook.com/CorporacionFestivalDeTamboresDePalenque/",
-      },
-      {
-        texto: "Foto: Victoria Sánchez Mércol, CC BY-SA 3.0 — Wikimedia Commons",
-        url: "https://commons.wikimedia.org/wiki/File:Champeta_palenque.jpg",
       },
     ],
   }),
