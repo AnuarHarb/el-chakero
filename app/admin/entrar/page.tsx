@@ -15,11 +15,7 @@ export default async function Entrar({
     <main className="doc bloque">
       <Logo />
       <h1 style={{ margin: "var(--s-8) 0 var(--s-4)" }}>Entrar al equipo</h1>
-      <p>
-        Correo y contraseña, o Google. Quien se registra entra como lector. El
-        primer administrador se promueve a mano en Supabase (ver{" "}
-        <code>supabase/seed-primer-admin.sql</code>).
-      </p>
+      <p>Correo y contraseña, o Google. Quien se registra entra como lector.</p>
       <FormularioEntrar
         supabaseListo={isSupabaseConfigured()}
         siguiente={siguiente || "/admin/"}

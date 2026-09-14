@@ -11,7 +11,7 @@ type Props = {
 };
 
 export async function ListadoSeccion({ seccion, queHay }: Props) {
-  const { piezas, usandoSemilla } = await cargarPiezasDeSeccion(seccion);
+  const { piezas } = await cargarPiezasDeSeccion(seccion);
   const titulo = nombreSeccion(seccion);
 
   return (
@@ -20,13 +20,10 @@ export async function ListadoSeccion({ seccion, queHay }: Props) {
         <div className="doc bloque">
           <h1>{titulo}</h1>
           <p>{queHay}</p>
-          {usandoSemilla && piezas.length > 0 ? (
-            <p className="aviso">Semilla en el código. Cuando haya piezas en la base, salen aquí.</p>
-          ) : null}
           {piezas.length === 0 ? (
             <div className="vacio">
-              <h2>Aún no hay nada en {titulo.toLowerCase()}</h2>
-              <p>Cuando el equipo publique, las piezas más recientes salen primero.</p>
+              <h2>No hay piezas en {titulo.toLowerCase()}</h2>
+              <p>Cuando salga una, la más reciente va primero.</p>
             </div>
           ) : (
             <div className="rejilla-tres">

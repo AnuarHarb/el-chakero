@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { fechaCorta } from "@/lib/fecha";
+import { CANAL_WHATSAPP, LLAMADO_PREGON } from "@/lib/site";
 import type { PiezaPublica } from "@/lib/supabase/tipos";
 import { nombreSeccion } from "./EtiquetaSeccion";
 
@@ -14,13 +15,19 @@ export function Pregon({ pieza }: Props) {
         <svg className="ondas-fondo" viewBox="0 0 34 24" aria-hidden="true">
           <path d="M14 6.5a8 8 0 0 1 0 11M19.5 3.2a13 13 0 0 1 0 17.6M25 0.8a17.6 17.6 0 0 1 0 22.4" />
         </svg>
-        <p className="llamado">Oigan bien, Palenque:</p>
-        <h2 id="pregon-titulo">La primera edición se está armando</h2>
-        <p>
-          Aquí va a ir el pregón: una sola noticia grande, con su audio de 60 a
-          90 segundos. Todavía no hay nada publicado.
+        <p className="llamado" lang="pal">
+          {LLAMADO_PREGON}
         </p>
-        <p className="meta">El hueco ya está. Las piezas llegan por el CMS.</p>
+        <h2 id="pregon-titulo">El pregón de Palenque</h2>
+        <p>
+          Las noticias se oyen primero: un audio corto por el canal de WhatsApp.
+          En esta web queda el archivo y la pieza del día.
+        </p>
+        <p className="meta">
+          <a href={CANAL_WHATSAPP} rel="noreferrer">
+            Oírlo en el canal
+          </a>
+        </p>
       </section>
     );
   }
@@ -32,7 +39,9 @@ export function Pregon({ pieza }: Props) {
       <svg className="ondas-fondo" viewBox="0 0 34 24" aria-hidden="true">
         <path d="M14 6.5a8 8 0 0 1 0 11M19.5 3.2a13 13 0 0 1 0 17.6M25 0.8a17.6 17.6 0 0 1 0 22.4" />
       </svg>
-      <p className="llamado">Oigan bien, Palenque:</p>
+      <p className="llamado" lang="pal">
+        {LLAMADO_PREGON}
+      </p>
       <h2>
         <Link href={href}>{pieza.titulo}</Link>
       </h2>

@@ -19,9 +19,8 @@ export function FormularioEntrar({ supabaseListo, siguiente = "/admin/" }: Props
     return (
       <div className="error" role="status">
         <p>
-          Falta configurar Supabase. Copia <code>.env.example</code> a{" "}
-          <code>.env.local</code> y llena URL y clave anónima (o publishable).
-          El sitio público sí se puede ver sin eso.
+          El acceso del equipo no está disponible en este momento. El sitio
+          público sí se puede leer.
         </p>
       </div>
     );
@@ -81,7 +80,7 @@ export function FormularioEntrar({ supabaseListo, siguiente = "/admin/" }: Props
     });
     if (fallo) {
       setError(
-        "Google no está habilitado todavía. Enciéndelo en Auth → Providers de Supabase.",
+        "Google no respondió. Prueba con correo y contraseña.",
       );
     }
   }
@@ -136,7 +135,7 @@ export function FormularioEntrar({ supabaseListo, siguiente = "/admin/" }: Props
           </button>
         </div>
       </form>
-      <p className="aviso">O entra con Google, si Anuar ya lo configuró.</p>
+      <p className="aviso">También puede entrar con Google.</p>
       <button className="boton boton-secundario" type="button" onClick={google}>
         Continuar con Google
       </button>

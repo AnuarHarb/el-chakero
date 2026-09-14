@@ -6,6 +6,11 @@ export const CANAL_WHATSAPP =
   process.env.NEXT_PUBLIC_WHATSAPP_CHANNEL ??
   "https://whatsapp.com/channel/0029Vb8FvlmLI8YeFZWwIs23";
 
+export const CORREO_NOTICIAS = "noticias@elchakero.com";
+
+/** Llamado del pregón, en palenquero. El resto de la pieza va en español. */
+export const LLAMADO_PREGON = "Kuchá, Ma Gende Ri Palenge";
+
 function urlSitioAbsoluta(valor: string | undefined, respaldo: string): string {
   const crudo = valor?.trim();
   if (!crudo) return respaldo;
@@ -53,11 +58,6 @@ export type SlugSeccion = (typeof SECCIONES)[number]["slug"];
 
 export const PAGINAS_FIJAS = [
   { slug: "quienes-somos", titulo: "Quiénes somos", ruta: "/quienes-somos/" },
-  {
-    slug: "quien-financia",
-    titulo: "Quién financia El Chakero",
-    ruta: "/quien-financia/",
-  },
   {
     slug: "como-funcionan-las-noticias",
     titulo: "Cómo funcionan las noticias",
