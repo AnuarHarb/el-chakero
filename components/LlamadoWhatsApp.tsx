@@ -1,4 +1,4 @@
-import { CANAL_WHATSAPP } from "@/lib/site";
+import { EnlaceCanal } from "@/components/EnlaceCanal";
 
 export function LlamadoWhatsApp() {
   return (
@@ -10,9 +10,7 @@ export function LlamadoWhatsApp() {
           que pasó, cuéntanos por ahí.
         </p>
       </div>
-      <a className="boton" href={CANAL_WHATSAPP} rel="noreferrer">
-        Unirme al canal
-      </a>
+      <EnlaceCanal className="boton">Unirme al canal</EnlaceCanal>
     </aside>
   );
 }

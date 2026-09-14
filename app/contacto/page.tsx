@@ -1,6 +1,7 @@
 import Link from "next/link";
+import { EnlaceCanal } from "@/components/EnlaceCanal";
 import { PaginaFija } from "@/components/PaginaFija";
-import { CANAL_WHATSAPP, CORREO_NOTICIAS } from "@/lib/site";
+import { CORREO_NOTICIAS } from "@/lib/site";
 
 export const metadata = {
   title: "Contacto",
@@ -17,9 +18,7 @@ export default function Contacto() {
       <address>
         <p>
           Canal:{" "}
-          <a href={CANAL_WHATSAPP} rel="noreferrer">
-            El Chakero en WhatsApp
-          </a>
+          <EnlaceCanal>El Chakero en WhatsApp</EnlaceCanal>
         </p>
         <p>
           Correo:{" "}

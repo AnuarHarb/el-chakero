@@ -1,6 +1,6 @@
 import Link from "next/link";
+import { EnlaceCanal } from "@/components/EnlaceCanal";
 import { PaginaFija } from "@/components/PaginaFija";
-import { CANAL_WHATSAPP } from "@/lib/site";
 
 export const metadata = {
   title: "Envía tu noticia",
@@ -20,9 +20,7 @@ export default function EnviaTuNoticia() {
         llega un «pasó esto».
       </p>
       <p>
-        <a className="boton" href={CANAL_WHATSAPP} rel="noreferrer">
-          Escribir por el canal
-        </a>
+        <EnlaceCanal className="boton">Escribir por el canal</EnlaceCanal>
       </p>
       <p>
         Si ya forma parte de la red de corresponsales, entre al panel y use

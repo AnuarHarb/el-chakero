@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { EnlaceCanal } from "@/components/EnlaceCanal";
 import { PAGINAS_FIJAS } from "@/lib/site";
 
 export function Pie() {
@@ -12,6 +13,7 @@ export function Pie() {
               {pagina.titulo}
             </Link>
           ))}
+          <EnlaceCanal>WhatsApp</EnlaceCanal>
         </nav>
         <p>El Chakero · Palenque · elchakero.com</p>
       </div>
