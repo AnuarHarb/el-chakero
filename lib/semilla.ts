@@ -142,7 +142,9 @@ Ella habla de un municipio especial por la cultura y por el patrimonio oral. Dic
 
 El plazo que cuentan los medios es agosto y septiembre de 2026: trabajo en el territorio, mirar impactos buenos y malos, y de ahí sacar una ordenanza que respete las normas del país y recoja las formas que han mantenido la lengua, la historia y la organización palenquera. Participan, según esa misma nota, el Ministerio del Interior, la Gobernación, la comunidad y el Comité Impulsor.
 
-El Chakero no tiene acta de esas mesas. No vamos a inventar cómo quedó el dibujo del «municipio híbrido». Lo que sí se puede decir, porque lo dijeron en voz alta: si Palenque pasa a municipio y el kuagro y los mayores quedan de adorno, no es el municipio que se está discutiendo.`,
+Ese mismo kuagro, este año, también fue cine: un corto palenquero se estrenó en el FICCI. Eso está en Cultura. Aquí el asunto es otro: si Palenque pasa a municipio y el kuagro y los mayores quedan de adorno, no es el municipio que se está discutiendo.
+
+El Chakero no tiene acta de esas mesas. No vamos a inventar cómo quedó el dibujo del «municipio híbrido».`,
     cita: {
       texto:
         "Estamos discutiendo hoy en la consulta previa y haciendo esa armazón de cómo articulamos los kuagros, cómo articulamos el consejo de mayores… tiene que tener también voz decisoria.",
@@ -152,6 +154,10 @@ El Chakero no tiene acta de esas mesas. No vamos a inventar cómo quedó el dibu
       {
         texto: "Alerta Cartagena — entrevista a Dorina Hernández sobre gobernanza",
         url: "https://cartagena.alerta.com.co/quejodromo/san-basilio-de-palenque-a-un-paso-de-ser-el-nuevo-municipio-de-bolivar-248786",
+      },
+      {
+        texto: "El Chakero — el corto Kuagro en el FICCI (Cultura)",
+        url: "/cultura/corto-kuagro-ficci-65/",
       },
       {
         texto: "Foto: Dtokra, CC BY-SA 4.0 — Wikimedia Commons",
@@ -238,45 +244,97 @@ Cuando la Corporación suelte la programación, aquí se cuenta con su nombre. M
     ],
   }),
   pieza({
-    id: "a1e1c001-0005-4000-8000-000000000005",
-    slug: "keinel-cimarra-consulta-previa",
-    titulo: "Keinel Cimarra: «una luz al final del sendero»",
-    seccion: "gente",
-    formato: "perfil",
-    fecha_publicacion: "2026-09-14T12:30:00-05:00",
+    id: "a1e1c001-0008-4000-8000-000000000008",
+    slug: "partido-democrata-nacio-en-palenque",
+    titulo: "El Demócrata Colombiano dice que nació en Palenque y no se ha ido",
+    seccion: "comunidad",
+    formato: "noticia",
+    fecha_publicacion: "2026-07-29T16:00:00-05:00",
     foto_url: "/semilla/plaza-benkos-2007.jpg",
     pie_foto:
-      "Estatua de Benkos Biohó en la plaza de Palenque, 1 de diciembre de 2007. Foto: Kosmel Bonfante / Wikimedia Commons (CC BY 3.0). Recorte 3:2. No es retrato de Keinel Cimarra.",
+      "Estatua de Benkos Biohó en la plaza de Palenque, 1 de diciembre de 2007. Foto: Kosmel Bonfante / Wikimedia Commons (CC BY 3.0). Recorte 3:2. No es la Convención Nacional de 2026.",
     audio_url: null,
     duracion: null,
     entradilla:
-      "El representante del Consejo Comunitario Makankamaná salió en la primera jornada de consulta previa. No es biografía. Es lo que dijo ese día, con nombre y cargo.",
-    cuerpo: `Keinel Joel Cimarra Cassiani habla en esa mesa como representante del Consejo Comunitario Makankamaná y como delegado nacional de Consulta Previa. Así lo nombraron El Universal y Caracol el 5 de agosto. El Chakero no tiene más ficha: ni edad, ni oficio, ni si vive en el pueblo o en la diáspora. No se inventa.
+      "A fines de julio el Partido Demócrata Colombiano hizo Convención Nacional en Palenque. Dijo que aquí nació y que de aquí no se ha ido. La personería 4033 se la entregaron en este pueblo, en 2022.",
+    cuerpo: `${LLAMADO_PREGON}: no es un perfil. Es el partido. El 29 de julio de 2026 el Partido Demócrata Colombiano reunió Convención Nacional en San Basilio de Palenque. Vive La Noticia cubrió esa sala.
 
-Lo que sí quedó grabado en esas crónicas es el tono. Dijo que el proceso lleva dos años de dificultades y que, con ese primer encuentro, se ve «una luz al final del sendero». Dijo también que el Consejo Comunitario va a seguir trabajando con la futura Alcaldía para que Palenque sea un municipio ejemplo.
+El presidente y representante legal, Pedro Adán Torres Pérez, palenquero, les dijo a los delegados: «La historia no se inventa, la historia ya existe. El Partido Demócrata Colombiano nació en Palenque y nunca se ha ido de Palenque». Eso es lo que él afirma. El Chakero no va a contar los militantes de cada departamento: no los contamos.
 
-Esa segunda frase pesa. Habla de Alcaldía como algo que viene, no como algo que ya está. Y deja al Consejo Comunitario dentro del dibujo, no afuera. En Palenque eso no es detalle: es la pregunta de si el municipio se come a la autoridad que ya existe o si la reconoce.
+La personería jurídica es la 4033 de 2022. Torres dijo en esa convención que vinieron los nueve magistrados del Consejo Nacional Electoral y se la entregaron aquí. OPICOL dató ese acto el 25 de agosto de 2022, en Palenque: primer partido de origen palenquero con personería. El CNE sigue listando esa resolución.
 
-El nombre, en los periódicos de agosto, va con C: Cimarra. Otras publicaciones del territorio lo han escrito Simarra. Aquí se deja como salió en las notas de esa jornada, hasta que él o el Consejo Comunitario digan la grafía que usan.
+En junio, cuando Torres llegó a la Cámara, El Universal escribió que el partido había mantenido la personería en las legislativas y que tenía un senador y tres representantes. En la convención Torres también dijo cifras de 2023 —87 alcaldes, 198 concejales—. Eso lo dijo él. Aquí no hay escrutinio propio.
 
-Un perfil de verdad pediría una conversación en el patio, no tres frases de rueda de prensa. Esto es lo que hay. Si Keinel o el Makankamaná quieren hablar largo —de la consulta, de la tierra, de cómo se ve el pueblo cuando salga el municipio— el canal está para eso.`,
+Lo que sí cabe en Palenque es esto: un partido que se declara nacido en el pueblo, con personería entregada en la plaza de Benkos, y que en 2026 volvió a convocar aquí. Si el acta de esa convención o el padrón dicen otra cosa, el canal está abierto.`,
     cita: {
       texto:
-        "Sabemos que este proceso ha enfrentado dificultades durante estos dos años, pero hoy vemos una luz al final del sendero.",
-      fuente: "Keinel Joel Cimarra Cassiani, 5 de agosto de 2026, citado por El Universal y Caracol",
+        "La historia no se inventa, la historia ya existe. El Partido Demócrata Colombiano nació en Palenque y nunca se ha ido de Palenque.",
+      fuente: "Pedro Adán Torres Pérez, Convención Nacional del PDC en Palenque, 29 de julio de 2026, citado por Vive La Noticia",
     },
+    transparencia:
+      "Pieza de semilla. La Convención la cubrió Vive La Noticia el 29 de julio de 2026. La entrega de la personería 4033 en Palenque, 25 de agosto de 2022, la dató OPICOL. El listado del CNE confirma esa resolución. Las cifras de alcaldes y concejales son las que Torres dijo en esa sala, no un conteo de esta redacción. Foto de archivo, no del acto.",
     fuentes: [
       {
-        texto: "El Universal, 5 ago 2026 — cita del Consejo Comunitario",
-        url: "https://www.eluniversal.com.co/regional/bolivar/2026/08/05/san-basilio-de-palenque-inicia-la-ruta-formal-para-convertirse-en-municipio/",
+        texto: "Vive La Noticia, 29 jul 2026 — Convención Nacional en Palenque",
+        url: "https://vivelanoticia.com/2026/07/29/pedro-adan-torres-reivindica-el-origen-palenquero-del-partido-democrata-colombiano-durante-la-convencion-nacional/",
       },
       {
-        texto: "Caracol Radio, 5 ago 2026 — misma jornada",
-        url: "https://caracol.com.co/2026/08/05/gobernacion-de-bolivar-avanza-en-la-ruta-para-convertir-a-san-basilio-de-palenque-en-municipio/",
+        texto: "OPICOL, 27 ago 2022 — personería entregada en Palenque el 25 de agosto",
+        url: "https://www.opicol.com/2022/08/27/concejo-nacional-electoral-reconoce-personeria-juridica-al-partido-democrata-colombiano-en-san-basilio-de-palenque/",
+      },
+      {
+        texto: "CNE — Partido Demócrata Colombiano, resolución 4033 de 2022",
+        url: "https://www.cne.gov.co/index.php/partidos-movimientos-politicos-y-grupos-significativos/778",
+      },
+      {
+        texto: "El Universal, 19 jun 2026 — personería y bancada en el Congreso",
+        url: "https://www.eluniversal.com.co/politica/2026/06/18/el-representante-a-la-camara-que-destinara-todo-su-salario-a-una-sala-de-sistemas-en-palenque/",
       },
       {
         texto: "Foto: Kosmel Bonfante, CC BY 3.0 — Wikimedia Commons",
         url: "https://commons.wikimedia.org/wiki/File:San_basilio_de_palenque_-_panoramio_(1).jpg",
+      },
+    ],
+  }),
+  pieza({
+    id: "a1e1c001-0009-4000-8000-000000000009",
+    slug: "corto-kuagro-ficci-65",
+    titulo: "El corto Kuagro habló palenquero en el FICCI",
+    seccion: "cultura",
+    formato: "noticia",
+    fecha_publicacion: "2026-05-03T10:00:00-05:00",
+    foto_url: "/semilla/baile-palenque.jpg",
+    pie_foto:
+      "Baile y tambor en Palenque. Foto: Victoria Sánchez Mércol / Wikimedia Commons (CC BY-SA 3.0). Recorte 3:2. No es un fotograma del corto Kuagro ni una función del FICCI.",
+    audio_url: null,
+    duracion: null,
+    entradilla:
+      "Doce minutos, niños del pueblo, lengua palenquera. El corto Kuagro se estrenó en el FICCI 65, en Cartagena. No es turismo. Es el kuagro en pantalla.",
+    cuerpo: `El kuagro no es solo el asunto de la consulta previa. Este año también fue cine. Caracol, el 15 de marzo, contó que el corto Kuagro —12 minutos, hablado en palenquero, con niños del territorio— iba a la selección De Indias Cortometrajes del FICCI 65. Lo dirige Diego Casseres, palenquero. El Universal, el 3 de mayo, ya lo da por proyectado: emocionó en las funciones y cerró esa selección.
+
+La ficha del festival pone tres funciones en Cartagena: 18 de abril en el Caribe Plaza y dos el 19, una de ellas en la Plaza de la Proclamación. ATPQ Studios. El Universal escribe el apellido Cáceres. Caracol y el FICCI, Casseres. Aquí se deja como en la ficha del festival, hasta que el equipo diga la grafía.
+
+La historia es de niños que arman un kuagro: esa segunda familia que en Palenque no se suelta. El Universal recuerda lo que ya dijo la Unesco del espacio cultural: el kuagro trae derechos y deberes, y el trabajo y los duelos se cargan entre todos. Eso no es dato nuevo. Lo nuevo es que un equipo del pueblo lo rodó —el director dice que fue entre el 10 y el 12 de julio de 2025— y que la lengua de la sala fue palenquero.
+
+No hay fotograma con licencia para poner aquí. La foto es baile de archivo. Tampoco vamos a copiar la crítica de la función ni a decir cuánta gente de Palenque se fue para Cartagena: eso no salió contado. El dato es el corto, la lengua y el festival.
+
+El Chakero no hace ficha de cineasta. Si ATPQ o la Corporación del Festival de Tambores quieren pasar una función en el pueblo, se anuncia con su nombre.`,
+    fuentes: [
+      {
+        texto: "Caracol Radio, 15 mar 2026 — selección De Indias, FICCI 65",
+        url: "https://caracol.com.co/2026/03/15/kuagro-dirigido-por-diego-casseres-llevara-el-cine-joven-de-palenque-al-ficci-65/",
+      },
+      {
+        texto: "El Universal, 3 may 2026 — el corto ya se proyectó en el FICCI",
+        url: "https://www.eluniversal.com.co/cultural/2026/05/03/orgullo-colombiano-asi-nacio-kuagro-la-pelicula-que-celebra-la-amistad-en-palenque/",
+      },
+      {
+        texto: "FICCI 65 — ficha de Kuagro, funciones del 18 y 19 de abril",
+        url: "https://www.ficcifestival.com/proyecciones/kuagro",
+      },
+      {
+        texto: "Foto: Victoria Sánchez Mércol, CC BY-SA 3.0 — Wikimedia Commons",
+        url: "https://commons.wikimedia.org/wiki/File:Champeta_palenque.jpg",
       },
     ],
   }),
@@ -300,6 +358,8 @@ El periodo que le toca es el que queda del 2025-2026. No es una curul de cuatro 
 
 Ese mismo junio puso esto sobre la mesa: el 100 % de su salario de representante, dijo, iba para adecuar y dotar una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. «Soy hijo de Palenque», dijo. Que las familias se esfuerzan y que a los jóvenes de aquí se les niegan cosas que en otros lados parecen del diario. Prometió cuentas públicas: compras, plata, resultados, con la comunidad educativa y las directivas.
 
+En julio el Partido Demócrata Colombiano —el que él fundó y preside— hizo Convención Nacional en Palenque. Dijo que el partido nació aquí y que no se ha ido. La personería 4033 se la entregaron en este pueblo en 2022. Eso no es ficha de vida: es el partido. El detalle está en Comunidad.
+
 Esa sala se inauguró el 15 de septiembre del 2026. No se quedó en el comunicado. El martes abrió con 25 portátiles, UPS y reguladores de voltaje, y una charla. La donación va con el programa Kuagro Tech y la Fundación Código Abierto, para que los muchachos aprendan a programar y a usar inteligencia artificial. El detalle de ese día está en Educación.
 
 No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Biohó, el nombre de la escuela.`,
@@ -309,6 +369,10 @@ No hay retrato suyo con licencia clara para usar. La foto es la plaza: Benkos Bi
       fuente: "Pedro Adán Torres Pérez, citado por El Universal y El Afro Bogotano, junio de 2026",
     },
     fuentes: [
+      {
+        texto: "El Chakero — el partido dice que nació en Palenque (Comunidad)",
+        url: "/comunidad/partido-democrata-nacio-en-palenque/",
+      },
       {
         texto: "El Chakero, 15 sep 2026 — inauguración de la sala (Educación)",
         url: "/educacion/kuagro-tech-inauguran-sala-computo/",
