@@ -1,3 +1,9 @@
+import {
+  piezaSemilla,
+  piezasSemillaDeSeccion,
+  piezasSemillaPublicadas,
+  SEMILLA_AGENDA,
+} from "./semilla";
 import { isSupabaseConfigured } from "./supabase/config";
 import { createClient } from "./supabase/server";
 import type { EventoAgenda, PiezaPublica, Seccion } from "./supabase/tipos";
@@ -12,20 +18,44 @@ export type Portada = {
   agenda: EventoAgenda[];
   error: string | null;
   supabaseListo: boolean;
+  usandoSemilla: boolean;
 };
 
-export async function cargarPortada(): Promise<Portada> {
-  const vacia: Portada = {
-    pregon: null,
-    tarjetas: [],
-    gente: null,
-    agenda: [],
-    error: null,
-    supabaseListo: isSupabaseConfigured(),
-  };
+function armarPortada(
+  piezas: PiezaPublica[],
+  agenda: EventoAgenda[],
+  extras: Pick<Portada, "error" | "supabaseListo" | "usandoSemilla">,
+): Portada {
+  const pregon =
+    piezas.find((pieza) => pieza.formato === "pregon" || pieza.formato === "noticia") ??
+    piezas[0] ??
+    null;
+  const resto = piezas.filter((pieza) => pieza.id !== pregon?.id);
+  const gente = resto.find((pieza) => pieza.seccion === "gente") ?? null;
 
-  if (!vacia.supabaseListo) {
-    return vacia;
+  return {
+    pregon,
+    tarjetas: resto.filter((pieza) => pieza.id !== gente?.id).slice(0, 8),
+    gente,
+    agenda,
+    ...extras,
+  };
+}
+
+function portadaSemilla(
+  extras: Pick<Portada, "error" | "supabaseListo">,
+): Portada {
+  return armarPortada(piezasSemillaPublicadas(), SEMILLA_AGENDA, {
+    ...extras,
+    usandoSemilla: true,
+  });
+}
+
+export async function cargarPortada(): Promise<Portada> {
+  const supabaseListo = isSupabaseConfigured();
+
+  if (!supabaseListo) {
+    return portadaSemilla({ error: null, supabaseListo: false });
   }
 
   try {
@@ -47,41 +77,35 @@ export async function cargarPortada(): Promise<Portada> {
       ]);
 
     if (errorPiezas || errorAgenda) {
-      return {
-        ...vacia,
+      return portadaSemilla({
         error: "No se pudieron cargar las piezas. Intenta de nuevo.",
-      };
+        supabaseListo: true,
+      });
     }
 
     const lista = (piezas ?? []) as unknown as PiezaPublica[];
-    const pregon =
-      lista.find((pieza) => pieza.formato === "pregon" || pieza.formato === "noticia") ??
-      lista[0] ??
-      null;
-    const resto = lista.filter((pieza) => pieza.id !== pregon?.id);
-    const gente = resto.find((pieza) => pieza.seccion === "gente") ?? null;
+    if (lista.length === 0) {
+      return portadaSemilla({ error: null, supabaseListo: true });
+    }
 
-    return {
-      pregon,
-      tarjetas: resto.filter((pieza) => pieza.id !== gente?.id).slice(0, 8),
-      gente,
-      agenda: (agenda ?? []) as EventoAgenda[],
+    return armarPortada(lista, (agenda ?? []) as EventoAgenda[], {
       error: null,
       supabaseListo: true,
-    };
+      usandoSemilla: false,
+    });
   } catch {
-    return {
-      ...vacia,
+    return portadaSemilla({
       error: "No se pudieron cargar las piezas. Intenta de nuevo.",
-    };
+      supabaseListo: true,
+    });
   }
 }
 
 export async function cargarPiezasDeSeccion(
   seccion: Seccion,
-): Promise<{ piezas: PiezaPublica[]; error: string | null }> {
+): Promise<{ piezas: PiezaPublica[]; error: string | null; usandoSemilla: boolean }> {
   if (!isSupabaseConfigured()) {
-    return { piezas: [], error: null };
+    return { piezas: piezasSemillaDeSeccion(seccion), error: null, usandoSemilla: true };
   }
 
   try {
@@ -94,12 +118,25 @@ export async function cargarPiezasDeSeccion(
       .order("fecha_publicacion", { ascending: false });
 
     if (error) {
-      return { piezas: [], error: "No se pudo cargar esta sección." };
+      return {
+        piezas: piezasSemillaDeSeccion(seccion),
+        error: "No se pudo cargar esta sección.",
+        usandoSemilla: true,
+      };
     }
 
-    return { piezas: (data ?? []) as unknown as PiezaPublica[], error: null };
+    const lista = (data ?? []) as unknown as PiezaPublica[];
+    if (lista.length === 0) {
+      return { piezas: piezasSemillaDeSeccion(seccion), error: null, usandoSemilla: true };
+    }
+
+    return { piezas: lista, error: null, usandoSemilla: false };
   } catch {
-    return { piezas: [], error: "No se pudo cargar esta sección." };
+    return {
+      piezas: piezasSemillaDeSeccion(seccion),
+      error: "No se pudo cargar esta sección.",
+      usandoSemilla: true,
+    };
   }
 }
 
@@ -108,7 +145,7 @@ export async function cargarPieza(
   slug: string,
 ): Promise<PiezaPublica | null> {
   if (!isSupabaseConfigured()) {
-    return null;
+    return piezaSemilla(seccion, slug);
   }
 
   const supabase = await createClient();
@@ -120,12 +157,16 @@ export async function cargarPieza(
     .in("estado", ["publicada", "retirada"])
     .maybeSingle();
 
-  return (data as unknown as PiezaPublica) ?? null;
+  if (data) {
+    return data as unknown as PiezaPublica;
+  }
+
+  return piezaSemilla(seccion, slug);
 }
 
 export async function cargarPregones(): Promise<PiezaPublica[]> {
   if (!isSupabaseConfigured()) {
-    return [];
+    return piezasSemillaPublicadas().filter((pieza) => pieza.audio_url);
   }
 
   const supabase = await createClient();
@@ -136,5 +177,46 @@ export async function cargarPregones(): Promise<PiezaPublica[]> {
     .not("audio_url", "is", null)
     .order("fecha_publicacion", { ascending: false });
 
-  return (data ?? []) as unknown as PiezaPublica[];
+  const lista = (data ?? []) as unknown as PiezaPublica[];
+  if (lista.length === 0) {
+    return piezasSemillaPublicadas().filter((pieza) => pieza.audio_url);
+  }
+
+  return lista;
+}
+
+export async function cargarAgenda(): Promise<{
+  eventos: EventoAgenda[];
+  error: string | null;
+  usandoSemilla: boolean;
+}> {
+  if (!isSupabaseConfigured()) {
+    return { eventos: SEMILLA_AGENDA, error: null, usandoSemilla: true };
+  }
+
+  try {
+    const supabase = await createClient();
+    const { data, error } = await supabase
+      .from("agenda")
+      .select("id, fecha, hora, que, donde, convoca")
+      .order("fecha", { ascending: true });
+    if (error) {
+      return {
+        eventos: SEMILLA_AGENDA,
+        error: "No se pudo cargar la agenda.",
+        usandoSemilla: true,
+      };
+    }
+    const eventos = (data ?? []) as EventoAgenda[];
+    if (eventos.length === 0) {
+      return { eventos: SEMILLA_AGENDA, error: null, usandoSemilla: true };
+    }
+    return { eventos, error: null, usandoSemilla: false };
+  } catch {
+    return {
+      eventos: SEMILLA_AGENDA,
+      error: "No se pudo cargar la agenda.",
+      usandoSemilla: true,
+    };
+  }
 }

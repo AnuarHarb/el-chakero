@@ -8,7 +8,7 @@ import { fechaCorta } from "@/lib/fecha";
 export const revalidate = 120;
 
 export default async function Portada() {
-  const { pregon, tarjetas, gente, agenda, error } = await cargarPortada();
+  const { pregon, tarjetas, gente, agenda, error, usandoSemilla } = await cargarPortada();
 
   return (
     <SitioShell seccionActiva="portada">
@@ -19,6 +19,12 @@ export default async function Portada() {
           {error ? (
             <p className="error" role="alert">
               {error}
+            </p>
+          ) : null}
+          {usandoSemilla ? (
+            <p className="aviso">
+              Estas piezas están sembradas en el código, no en Supabase. Cuando el
+              CMS publique, reemplazan a esta semilla.
             </p>
           ) : null}
 
