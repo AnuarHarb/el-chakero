@@ -216,9 +216,15 @@ textarea:focus-visible {
 .pregon {
   position: relative;
   background: var(--pregon);
-  padding: var(--s-8);
   overflow: hidden;
   color: var(--pechiche);
+}
+
+.pregon-cuerpo {
+  position: relative;
+  max-width: var(--ancho);
+  margin-inline: auto;
+  padding: var(--s-8) var(--s-6);
 }
 
 .pregon .ondas-fondo {
