@@ -32,7 +32,7 @@ export const SEMILLA_PIEZAS: PiezaPublica[] = [
   pieza({
     id: "a1e1c001-0007-4000-8000-000000000007",
     slug: "kuagro-tech-inauguran-sala-computo",
-    titulo: "Este martes inauguran la sala de cómputo: 25 portátiles",
+    titulo: "Este martes inauguran la sala de cómputo",
     seccion: "educacion",
     formato: "noticia",
     fecha_publicacion: "2026-09-15T18:00:00-05:00",
@@ -42,10 +42,10 @@ export const SEMILLA_PIEZAS: PiezaPublica[] = [
     audio_url: null,
     duracion: null,
     entradilla:
-      "El 15 de septiembre de 2026 se inaugura la sala que donó Pedro Adán Torres, excongresista por la circunscripción afro: 25 portátiles, UPS y reguladores. No es un regalo suelto: es el arranque de ORICA, con Fundación Código Abierto y Kuagro Tech.",
+      "El 15 de septiembre de 2026 se inaugura la sala que donó Pedro Adán Torres, excongresista por la circunscripción afro: portátiles, UPS y reguladores. No es un regalo suelto: es el arranque de ORICA, con Fundación Código Abierto y Kuagro Tech.",
     cuerpo: `${LLAMADO_PREGON}: este martes 15 de septiembre se inaugura la sala de cómputo.
 
-La donó Pedro Adán Torres Pérez, palenquero, excongresista por la circunscripción especial afrodescendiente. En junio, cuando ocupó —los días que faltaban del periodo— la curul que dejó Ana Rogelia Monsalve, dijo que el 100 % del sueldo de la Cámara iba para una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Ese martes la sala se abre: 25 portátiles. Para que no se las coma el voltaje, van con UPS y reguladores.
+La donó Pedro Adán Torres Pérez, palenquero, excongresista por la circunscripción especial afrodescendiente. En junio, cuando ocupó —los días que faltaban del periodo— la curul que dejó Ana Rogelia Monsalve, dijo que el 100 % del sueldo de la Cámara iba para una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Ese martes la sala se abre: hay portátiles. Para que no se las coma el voltaje, van con UPS y reguladores.
 
 No es un regalo de una vez y ya. Esa sala es el comienzo de ORICA, un centro de innovación tecnológica. Lo impulsa Torres. Lo acompaña la Fundación Código Abierto. El apuntar es grande: que el Caribe se vuelva epicentro de tecnología y que Palenque sea territorio tecnológico. Aquí no hay presupuesto ni lista de invitados. El dato es el nombre, el arranque y con quién va.
 
@@ -59,7 +59,7 @@ En agosto, muchachos de esa misma escuela se fueron al Tech Caribe Show, en Barr
 
 La foto es de la sala ese martes, con el listón todavía puesto. El retrato de Torres está en Gente.`,
     transparencia:
-      "Dato de la redacción: inauguración el 15 de septiembre de 2026, 25 portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. La sala es el arranque de ORICA, centro de innovación tecnológica impulsado por Torres, con el fin de que el Caribe sea epicentro tecnológico y Palenque territorio tecnológico. No hay otra fecha, ni presupuesto, ni lista de invitados. Torres ocupó la curul afro que dejó Monsalve en los días que faltaban del periodo. La foto es de la sala ese día.",
+      "Dato de la redacción: inauguración el 15 de septiembre de 2026, portátiles, UPS y reguladores, charla, programa Kuagro Tech con Fundación Código Abierto. La sala es el arranque de ORICA, centro de innovación tecnológica impulsado por Torres, con el fin de que el Caribe sea epicentro tecnológico y Palenque territorio tecnológico. No hay otra fecha, ni presupuesto, ni lista de invitados. Torres ocupó la curul afro que dejó Monsalve en los días que faltaban del periodo. La foto es de la sala ese día.",
     fuentes: [
       {
         texto: "El anuncio de junio, cuando Torres prometió el sueldo — perfil en Gente",
@@ -88,14 +88,14 @@ La foto es de la sala ese martes, con el listón todavía puesto. El retrato de 
     audio_url: null,
     duracion: null,
     entradilla:
-      "ORICA es el centro de innovación tecnológica. Lo impulsa Pedro Adán Torres, con la Fundación Código Abierto. La sala de 25 portátiles —sueldo de la curul, Kuagro Tech— es el comienzo: Palenque territorio tecnológico, el Caribe epicentro.",
-    cuerpo: `${LLAMADO_PREGON}: la sala no se queda en 25 portátiles y un listón. Ese martes 15 de septiembre es el primer piso de ORICA, un centro de innovación tecnológica en Palenque.
+      "ORICA es el centro de innovación tecnológica. Lo impulsa Pedro Adán Torres, con la Fundación Código Abierto. La sala de portátiles —sueldo de la curul, Kuagro Tech— es el comienzo: Palenque territorio tecnológico, el Caribe epicentro.",
+    cuerpo: `${LLAMADO_PREGON}: la sala no se queda en portátiles y un listón. Ese martes 15 de septiembre es el primer piso de ORICA, un centro de innovación tecnológica en Palenque.
 
 Lo impulsa Pedro Adán Torres Pérez —el palenquero de la curul afro, el del sueldo vuelto a Benkos Biohó—. Lo acompaña la Fundación Código Abierto. El programa que ya se nombró, Kuagro Tech, entra en ese mismo dibujo: muchachos aprendiendo a programar y a usar inteligencia artificial. No hay lista de talleres. No hay plata publicada. No hay fecha de un segundo acto. El dato es el nombre y el rumbo.
 
 El rumbo, el que se plantea, es este: que la región Caribe se vuelva epicentro de tecnología y que Palenque sea territorio tecnológico. Eso no se inventa como hecho cumplido. Se cuenta como el apuntar del centro. Si queda corto o si se agranda, se verá en el pueblo.
 
-La inauguración que sí hay es la de la sala: 25 portátiles, UPS y reguladores, una charla. Educación tiene esa pieza. Gente tiene a Torres. Aquí se dice una sola cosa más: no es un regalo suelto. Es el arranque de ORICA.`,
+La inauguración que sí hay es la de la sala: portátiles, UPS y reguladores, una charla. Educación tiene esa pieza. Gente tiene a Torres. Aquí se dice una sola cosa más: no es un regalo suelto. Es el arranque de ORICA.`,
     transparencia:
       "Dato de la redacción: ORICA es el nombre del centro de innovación tecnológica; la sala del 15 de septiembre de 2026 es el arranque; lo impulsa Torres, con Fundación Código Abierto; el fin planteado es el Caribe como epicentro tecnológico y Palenque como territorio tecnológico. No hay presupuesto, ni invitados, ni otra fecha. Foto de la sala ese día.",
     fuentes: [
@@ -627,7 +627,7 @@ Abogado, líder del pueblo, fundador, presidente y representante legal del Parti
 
 Ese mismo junio puso el sueldo sobre la mesa: el 100 % del salario de representante, dijo, iba para adecuar y dotar una sala de sistemas en la Institución Etnoeducativa Técnica Agropecuaria Benkos Biohó. Que las familias se esfuerzan y que a los jóvenes de aquí se les niegan cosas que en otros lados parecen del diario. Prometió cuentas públicas: compras, plata, resultados, con la comunidad educativa y las directivas. Diario La Libertad recogió también esto: que el liderazgo tiene sentido cuando se pone al servicio, y que servir pesa más que el puesto.
 
-Ahí está el ángulo. El partido pone la cara por Palenque. Se ve en Colombia. Y lo que se gana afuera se vuelve al territorio. La sala —inaugurada el 15 de septiembre del 2026, 25 portátiles, UPS, reguladores, Kuagro Tech— no es un regalo suelto: es el arranque de ORICA, el centro de innovación tecnológica, con la Fundación Código Abierto. El apuntar: Caribe como epicentro de tecnología, Palenque como territorio tecnológico. El detalle de ORICA está en Educación.
+Ahí está el ángulo. El partido pone la cara por Palenque. Se ve en Colombia. Y lo que se gana afuera se vuelve al territorio. La sala —inaugurada el 15 de septiembre del 2026, portátiles, UPS, reguladores, Kuagro Tech— no es un regalo suelto: es el arranque de ORICA, el centro de innovación tecnológica, con la Fundación Código Abierto. El apuntar: Caribe como epicentro de tecnología, Palenque como territorio tecnológico. El detalle de ORICA está en Educación.
 
 En julio, todavía en la curul, impulsó el homenaje del Congreso a Kid Pambelé. Ya fuera de esa curul, el partido hizo Convención Nacional en Palenque: el pueblo también honró a Cervantes, y el partido dijo que nació aquí y que no se ha ido. Cultura tiene a Pambelé. Comunidad tiene la Convención. El de la sala, en Educación.
 
