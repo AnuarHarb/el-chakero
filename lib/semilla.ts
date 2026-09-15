@@ -70,7 +70,7 @@ La foto es de la sala ese martes. El retrato de Torres está en Gente.`,
         url: "/gente/pedro-adan-torres-sala-sistemas/",
       },
       {
-        texto: "ORICA: la sala es el arranque, no el cierre (Educación)",
+        texto: "ORICA arranca con la sala de cómputo (Educación)",
         url: "/educacion/orica-centro-innovacion-palenque/",
       },
       {
