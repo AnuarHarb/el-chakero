@@ -12,7 +12,7 @@ export function Tarjeta({ pieza }: Props) {
 
   return (
     <article className={`tarjeta ${pieza.seccion}`}>
-      <EtiquetaSeccion seccion={pieza.seccion} />
+      <EtiquetaSeccion seccion={pieza.seccion} formato={pieza.formato} />
       <div className="img">
         {pieza.foto_url ? (
           // eslint-disable-next-line @next/next/no-img-element

@@ -37,8 +37,9 @@ export default async function Portada() {
           <section className="bloque rejilla-gente" aria-labelledby="gente-agenda">
             <div>
               <h2 id="gente-agenda" className="ui" style={{ fontSize: "var(--t-21)" }}>
-                Gente de la semana
+                <span lang="pal">Kombilesa</span>
               </h2>
+              <p className="meta">un vecino cada semana</p>
               {gente ? (
                 <Tarjeta pieza={gente} />
               ) : (

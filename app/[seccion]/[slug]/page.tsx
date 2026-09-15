@@ -56,7 +56,7 @@ export default async function Articulo({ params }: Props) {
     <SitioShell seccionActiva={seccion}>
       <main>
         <article className="doc bloque articulo">
-          <EtiquetaSeccion seccion={pieza.seccion} />
+          <EtiquetaSeccion seccion={pieza.seccion} formato={pieza.formato} />
           <h1>{pieza.titulo}</h1>
           {pieza.entradilla ? <p className="entradilla">{pieza.entradilla}</p> : null}
           <p className="meta">
