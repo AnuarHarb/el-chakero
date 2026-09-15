@@ -7,7 +7,7 @@ export default function Cultura() {
   return (
     <ListadoSeccion
       seccion="cultura"
-      queHay="Tambores, festival, lengua palenquera, cocina, kuagros, lumbalú, memoria."
+      queHay="Tambores, festival, Kid Pambelé, lengua palenquera, cocina, kuagros, lumbalú, memoria."
     />
   );
 }
