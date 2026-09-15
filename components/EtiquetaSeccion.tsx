@@ -1,4 +1,4 @@
-import type { Seccion } from "@/lib/supabase/tipos";
+import type { Formato, Seccion } from "@/lib/supabase/tipos";
 import { SECCIONES } from "@/lib/site";
 
 const ETIQUETAS: Record<Seccion | "agenda", string> = {
@@ -12,10 +12,16 @@ const ETIQUETAS: Record<Seccion | "agenda", string> = {
 
 type Props = {
   seccion: Seccion | "agenda";
+  formato?: Formato;
 };
 
-export function EtiquetaSeccion({ seccion }: Props) {
-  return <span className={`seccion ${seccion}`}>{ETIQUETAS[seccion]}</span>;
+export function EtiquetaSeccion({ seccion, formato }: Props) {
+  const kombilesa = seccion === "gente" && formato === "perfil";
+  return (
+    <span className={`seccion ${seccion}`} lang={kombilesa ? "pal" : undefined}>
+      {kombilesa ? "Kombilesa" : ETIQUETAS[seccion]}
+    </span>
+  );
 }
 
 export function nombreSeccion(seccion: Seccion): string {

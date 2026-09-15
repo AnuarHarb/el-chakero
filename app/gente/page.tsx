@@ -7,7 +7,7 @@ export default function Gente() {
   return (
     <ListadoSeccion
       seccion="gente"
-      queHay="El primer perfil de esta casa: Pedro Adán Torres. De aquí en adelante, una persona de Palenque por semana."
+      queHay="Kombilesa: un vecino cada semana. El primero es Pedro Adán Torres."
     />
   );
 }
