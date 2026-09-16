@@ -7,7 +7,7 @@ export default function Gente() {
   return (
     <ListadoSeccion
       seccion="gente"
-      queHay="Kombilesa: un vecino cada semana. El primero es Pedro Adán Torres."
+      queHay="Kombilesa: un vecino cada semana."
     />
   );
 }
