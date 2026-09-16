@@ -844,6 +844,17 @@ textarea:focus-visible {
   margin: 0 0 var(--s-4);
 }
 
+.articulo blockquote {
+  margin: var(--s-6) 0;
+  padding: 0 0 0 var(--s-6);
+  border-left: 4px solid var(--pregon);
+  max-width: var(--medida);
+}
+
+.articulo blockquote p {
+  margin: 0;
+}
+
 .articulo .entradilla {
   font-size: var(--t-21);
   line-height: 1.4;

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { BloqueAudio } from "@/components/BloqueAudio";
 import { Cita } from "@/components/Cita";
+import { CuerpoPieza } from "@/components/CuerpoPieza";
 import { EtiquetaSeccion, nombreSeccion } from "@/components/EtiquetaSeccion";
 import { LlamadoWhatsApp } from "@/components/LlamadoWhatsApp";
 import { SitioShell } from "@/components/SitioShell";
@@ -82,11 +83,7 @@ export default async function Articulo({ params }: Props) {
             </figure>
           ) : null}
           {pieza.cita ? <Cita texto={pieza.cita.texto} fuente={pieza.cita.fuente} /> : null}
-          {pieza.cuerpo
-            ? pieza.cuerpo.split(/\n\n+/).map((parrafo, indice) => (
-                <p key={indice}>{parrafo}</p>
-              ))
-            : null}
+          {pieza.cuerpo ? <CuerpoPieza texto={pieza.cuerpo} /> : null}
           {pieza.transparencia ? (
             <p className="aviso">Transparencia: {pieza.transparencia}</p>
           ) : null}
