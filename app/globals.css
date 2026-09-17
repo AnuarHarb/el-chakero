@@ -586,6 +586,11 @@ textarea:focus-visible {
   color: inherit;
 }
 
+.pie .acceso {
+  margin: var(--s-4) 0 0;
+  font-size: var(--t-12);
+}
+
 .formulario {
   display: grid;
   gap: var(--s-4);

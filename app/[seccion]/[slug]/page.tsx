@@ -84,9 +84,6 @@ export default async function Articulo({ params }: Props) {
           ) : null}
           {pieza.cita ? <Cita texto={pieza.cita.texto} fuente={pieza.cita.fuente} /> : null}
           {pieza.cuerpo ? <CuerpoPieza texto={pieza.cuerpo} /> : null}
-          {pieza.transparencia ? (
-            <p className="aviso">Transparencia: {pieza.transparencia}</p>
-          ) : null}
           {pieza.fuentes && pieza.fuentes.length > 0 ? (
             <footer className="fuentes">
               <h2>De dónde salió</h2>

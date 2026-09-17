@@ -1,8 +1,8 @@
 import { FormularioEntrar } from "@/components/admin/FormularioEntrar";
-import { Logo } from "@/components/Logo";
+import { SitioShell } from "@/components/SitioShell";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 
-export const metadata = { title: "Entrar" };
+export const metadata = { title: "Iniciar sesión" };
 
 export default async function Entrar({
   searchParams,
@@ -10,16 +10,22 @@ export default async function Entrar({
   searchParams: Promise<{ siguiente?: string }>;
 }) {
   const { siguiente } = await searchParams;
+  const supabaseListo = isSupabaseConfigured();
 
   return (
-    <main className="doc bloque">
-      <Logo />
-      <h1 style={{ margin: "var(--s-8) 0 var(--s-4)" }}>Entrar al equipo</h1>
-      <p>Correo y contraseña, o Google. Quien se registra entra como lector.</p>
-      <FormularioEntrar
-        supabaseListo={isSupabaseConfigured()}
-        siguiente={siguiente || "/admin/"}
-      />
-    </main>
+    <SitioShell>
+      <main>
+        <article className="doc bloque articulo">
+          <h1>Iniciar sesión</h1>
+          {supabaseListo ? (
+            <p>Correo y contraseña. Quien es del equipo entra aquí.</p>
+          ) : null}
+          <FormularioEntrar
+            supabaseListo={supabaseListo}
+            siguiente={siguiente || "/admin/"}
+          />
+        </article>
+      </main>
+    </SitioShell>
   );
 }

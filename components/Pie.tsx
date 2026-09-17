@@ -16,6 +16,9 @@ export function Pie() {
           <EnlaceCanal>WhatsApp</EnlaceCanal>
         </nav>
         <p>El Chakero · Palenque · elchakero.com</p>
+        <p className="acceso">
+          <Link href="/admin/entrar/">Iniciar sesión</Link>
+        </p>
       </div>
     </footer>
   );

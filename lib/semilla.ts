@@ -79,8 +79,7 @@ Los estudiantes que entraron a la sala el martes hablaron de lo mismo: de lo bon
 ### Siguientes pasos
 
 Los computadores ya están. Lo que falta es el internet: la red del colegio tiene que mejorar para sacarles provecho. Torres dijo que va a seguir con esto; quiere que el Benkos Biohó sea un colegio de alta calidad, y Orika es el camino que propone para llegar ahí.`,
-    transparencia:
-      "El Chakero es financiado por Pedro Adán Torres, presidente del Partido Demócrata Colombiano. Esta noticia es sobre una donación suya.",
+    transparencia: null,
   }),
 ];
 
