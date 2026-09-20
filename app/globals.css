@@ -889,6 +889,24 @@ textarea:focus-visible {
   margin-top: var(--s-2);
 }
 
+.articulo .galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s-6);
+  max-width: var(--medida);
+  margin: 0 0 var(--s-6);
+}
+
+.articulo .galeria figure {
+  margin: 0;
+}
+
+@media (max-width: 820px) {
+  .articulo .galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
 .fuentes {
   margin-top: var(--s-8);
   padding-top: var(--s-4);
