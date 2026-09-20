@@ -40,10 +40,7 @@ export default function ComoFuncionan() {
       <section>
         <h2>Quién publica</h2>
         <p>
-          Solo dirección publica. Si la pieza toca al medio —un vínculo, un
-          conflicto con lo que se cubre— lleva una línea de transparencia a la
-          vista. Si dirección está metida en esa sección, publica quien designe
-          el consejo.
+          Solo dirección publica. Quien escribe no publica lo suyo.
         </p>
       </section>
 

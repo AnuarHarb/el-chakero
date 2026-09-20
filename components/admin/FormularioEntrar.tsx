@@ -19,8 +19,7 @@ export function FormularioEntrar({ supabaseListo, siguiente = "/admin/" }: Props
     return (
       <div className="error" role="status">
         <p>
-          El acceso del equipo no está disponible en este momento. El sitio
-          público sí se puede leer.
+          El acceso del equipo no está listo. El sitio se puede leer igual.
         </p>
       </div>
     );
