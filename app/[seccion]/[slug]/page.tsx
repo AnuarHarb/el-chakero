@@ -82,6 +82,17 @@ export default async function Articulo({ params }: Props) {
               {pieza.pie_foto ? <figcaption>{pieza.pie_foto}</figcaption> : null}
             </figure>
           ) : null}
+          {pieza.galeria && pieza.galeria.length > 0 ? (
+            <section className="galeria" aria-label="Más fotos">
+              {pieza.galeria.map((foto) => (
+                <figure key={foto.url}>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={foto.url} alt={foto.pie} />
+                  <figcaption>{foto.pie}</figcaption>
+                </figure>
+              ))}
+            </section>
+          ) : null}
           {pieza.cita ? <Cita texto={pieza.cita.texto} fuente={pieza.cita.fuente} /> : null}
           {pieza.cuerpo ? <CuerpoPieza texto={pieza.cuerpo} /> : null}
           {pieza.fuentes && pieza.fuentes.length > 0 ? (

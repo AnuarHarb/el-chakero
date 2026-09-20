@@ -46,6 +46,11 @@ export type FuentePublica = {
   url: string;
 };
 
+export type FotoPublica = {
+  url: string;
+  pie: string;
+};
+
 export type PiezaPublica = {
   id: string;
   slug: string | null;
@@ -66,6 +71,7 @@ export type PiezaPublica = {
   /** Solo semilla en código. La tabla `piezas` no tiene estas columnas. */
   fuentes?: FuentePublica[] | null;
   cita?: { texto: string; fuente?: string } | null;
+  galeria?: FotoPublica[] | null;
   semilla?: boolean;
 };
 
